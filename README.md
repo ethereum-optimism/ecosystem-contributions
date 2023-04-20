@@ -1,4 +1,4 @@
-# Foundation Missions (RFPs) 
+# Ecosystem Contributions
 
 The Optimism Collective is organized around **Intents** — directional goals that help the Collective align and work together.
 
