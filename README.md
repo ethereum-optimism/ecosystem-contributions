@@ -78,6 +78,16 @@ Looking for the perfect project? Try filtering by the [labels that we've attache
 - [Estimated Impact: Large](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Estimated%20Impact%3A%20Large)
 - [Estimated Impact: XLarge](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Estimated%20Impact%3A%20XLarge)
 
+## Working on a Project
+
+### Working on Foundation Missions (RFPs)
+
+Foundation Missions (RFPs) are the most formal type of project listed within this repository. Foundation Missions generally include OP token grants for completion and typically require teams to explicitly propose to work on a given task during an open proposal period. One or more teams are selected to work on the task (based on the parameters of the Mission) and OP token grants are distributed upon completion. You should refer to the exact details of the Mission you're interested in working on to get a better understanding of the working process.
+
+### Working on Other Projects
+
+All other projects (any that are not Foundation Missions) do not have any formal working process or proposal period. You are free to work on any of these tasks at any time. **We highly recommend making a comment within the project's corresponding GitHub issue when you've decided to start work.** This can help reduce duplicated work and can help connect you to other contributors who may be interested in working on the same task.
+
 ## Funding and Rewards
 
 Your time is your most valuable asset. [The Optimism Collective believes that impact to the collective should be rewarded with profit to the individual](https://www.optimism.io/vision). The Optimism Collective ecosystem various different pathways for you to be potentially funded or rewarded for the work that you do. Here we'll take a look at the options available to you.
