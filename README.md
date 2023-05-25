@@ -4,14 +4,14 @@ Welcome to the Optimism Collective Ecosystem Contributions repository. Here you'
 
 ## Table of Contents
 
-- [Contribution Buckets](#contribution-buckets)
+- [Contribution Categories](#contribution-categories)
 - [Finding a Project](#finding-a-project)
 - [Working on a Project](#working-on-a-project)
 - [Funding and Rewards](#funding-and-rewards)
 
-## Contribution Buckets
+## Contribution Categories
 
-Different ways to contribute to the Optimism Collective are loosely organized into "buckets" which give a sense of the relative scope, utility, and complexity of any given project. Refer to the sections below to understand what each of these buckets mean and what type of tasks or ideas you can expect to find within a bucket.
+Different ways to contribute to the Optimism Collective are loosely organized into "categories" which give a sense of the relative scope, utility, and complexity of any given project. Refer to the sections below to understand what each of these categories mean and what type of tasks or ideas you can expect to find within a category.
 
 ### ✨ Contribution Opportunities
 
@@ -41,7 +41,7 @@ Ecosystem Project Ideas are ideas for projects that have clear value for the Opt
 
 Foundation Missions (aka RFPs) are proposals for specific initiatives that achieve an Optimism Collective **Intent** — a directional goal that helps the Collective align and work together. You can think of a Foundation Mission as an arrow aiming at the target (the Intent). Just as there are many paths an arrow might take on its way to a target, there are many different Foundation Missions that might accomplish an Intent.
 
-Foundation Missions, unlike the tasks listed in buckets, act as requests for proposals (RFPs) that teams can apply for. Generally, a limited number of teams are selected to work on a given Foundation Mission at any given time. Foundation Missions are also typically come with attached grants for the completion of the Mission.
+Foundation Missions, unlike the tasks listed in other categories, act as requests for proposals (RFPs) that teams can apply for. Generally, a limited number of teams are selected to work on a given Foundation Mission at any given time. Foundation Missions are also typically come with attached grants for the completion of the Mission.
 
 [Click here to view all available Foundation Missions.](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Foundation+Mission+%28RFP%29%22)
 
@@ -49,7 +49,7 @@ Foundation Missions, unlike the tasks listed in buckets, act as requests for pro
 
 Looking for the perfect project? Try filtering by the [labels that we've attached to every open issue](https://github.com/ethereum-optimism/ecosystem-contributions/labels).
 
-### Labels by Contribution Bucket
+### Labels by Contribution Category
 
 - [✨ Contribution Opportunities](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Contribution+Opportunity%22)
 - [🧪 Mad Science Project Ideas](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Mad+Science+Project+Idea%22)
