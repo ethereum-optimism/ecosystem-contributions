@@ -2,6 +2,13 @@
 
 Welcome to the Optimism Collective Ecosystem Contributions repository. Here you'll find various different ways to contribute to the Optimism Collective so that we can build an economy that works for humans, together. 
 
+## Table of Contents
+
+- [Contribution Buckets](#contribution-buckets)
+- [Finding a Project](#finding-a-project)
+- [Working on a Project](#working-on-a-project)
+- [Funding and Rewards](#funding-and-rewards)
+
 ## Contribution Buckets
 
 Different ways to contribute to the Optimism Collective are loosely organized into "buckets" which give a sense of the relative scope, utility, and complexity of any given project. Refer to the sections below to understand what each of these buckets mean and what type of tasks or ideas you can expect to find within a bucket.
