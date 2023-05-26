@@ -8,6 +8,7 @@ Welcome to the Optimism Collective Ecosystem Contributions repository. Here you'
 - [Finding a Project](#finding-a-project)
 - [Working on a Project](#working-on-a-project)
 - [Funding and Rewards](#funding-and-rewards)
+- [Support and Additional Resources](#support-and-additional-resources)
 
 ## Contribution Categories
 
