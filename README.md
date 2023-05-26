@@ -61,16 +61,14 @@ Looking for the perfect project? Try filtering by the [labels that we've attache
 ### Labels by Tag
 
 - [Tag: Contracts](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Contracts)
-
-### Labels by Category
-
-- [Category: Attestations](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Idea%20Category%3A%20Attestations)
-- [Category: Chain Infra](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Idea%20Category%3A%20Chain%20Infra)
-- [Category: Consumers](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Idea%20Category%3A%20Consumers)
-- [Category: Dev Tools](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Idea%20Category%3A%20Dev%20Tools)
-- [Category: Gaming](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Idea%20Category%3A%20Gaming)
-- [Category: Governance](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Idea%20Category%3A%20Governance)
-- [Category: OP Stack](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Idea%20Category%3A%20OP%20Stack)
+- [Tag: Protocol](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Protocol)
+- [Tag: Attestations](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Attestations)
+- [Tag: Chain Infra](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Chain%20Infra)
+- [Tag: Consumers](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Consumers)
+- [Tag: Dev Tools](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Dev%20Tools)
+- [Tag: Gaming](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Gaming)
+- [Tag: Governance](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Governance)
+- [Tag: OP Stack](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20OP%20Stack)
 
 ### Labels by Estimated Effort
 
