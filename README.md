@@ -71,6 +71,7 @@ Looking for the perfect project? Try filtering by the [labels that we've attache
 - [Tag: OP Stack](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20OP%20Stack)
 - [Tag: DeFi](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Tag%3A+DeFi%22)
 - [Tag: Documentation](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Tag%3A+Documentation%22)
+- [Tag: Meta](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Meta)
 
 ### Labels by Estimated Effort
 
