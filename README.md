@@ -99,7 +99,7 @@ All other projects (any that are not Foundation Missions) do not have any formal
 
 ## Funding and Rewards
 
-Your time is your most valuable asset. [The Optimism Collective believes that impact to the collective should be rewarded with profit to the individual](https://www.optimism.io/vision). The Optimism Collective ecosystem has various different pathways for you to be potentially funded or rewarded for the work that you do. Here we'll take a look at the options available to you.
+Your time is your most valuable asset. [The Optimism Collective believes that impact to the collective should be rewarded with profit to the individual](https://www.optimism.io/vision). The Optimism Collective ecosystem has various pathways for you to be potentially funded or rewarded for the work that you do. Here we'll take a look at the options available to you.
 
 ### Retroactive Public Goods Funding
 
