@@ -42,7 +42,7 @@ Ecosystem Project Ideas are ideas for projects that have clear value for the Opt
 
 Foundation Missions (aka RFPs) are proposals for specific initiatives that achieve an Optimism Collective **Intent** — a directional goal that helps the Collective align and work together. You can think of a Foundation Mission as an arrow aiming at the target (the Intent). Just as there are many paths an arrow might take on its way to a target, there are many different Foundation Missions that might accomplish an Intent.
 
-Foundation Missions, unlike the tasks listed in other categories, act as requests for proposals (RFPs) that teams can apply for. Generally, a limited number of teams are selected to work on a given Foundation Mission at any given time. Foundation Missions are also typically come with attached grants for the completion of the Mission.
+Foundation Missions, unlike the tasks listed in other categories, act as requests for proposals (RFPs) that teams can apply for. Generally, a limited number of teams are selected to work on a given Foundation Mission at any given time. Foundation Missions also typically come with attached grants for the completion of the Mission.
 
 [Click here to view all available Foundation Missions.](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Foundation+Mission+%28RFP%29%22)
 
@@ -109,13 +109,13 @@ RetroPGF rounds currently occur approximately once per quarter and will become m
 
 **Any project can be nominated for a RetroPGF round (including any completed project from this repository!).** Exact distribution details are determined by the set of badgeholders for a given round, the scope of the round, and the impact that each nominated project has had relative to its profit.
 
-RetroPGF is always a fantastic default option for being rewarded for the work that you do. Unlike traditional up-front grants, RetroPGF is distributed *after* impact has already been made and there is never a 100% likelihood that any given project will be rewarded. We've done our best in this repository to reflect tasks that are likely to be valuable to the Optimism Collective ecosystem and have specified the potential impact of each project in the "Impact" section of each task. Existence of a project within this repository does NOT as a guarantee that the project will be rewarded via RetroPGF.
+RetroPGF is always a fantastic default option for being rewarded for the work that you do. Unlike traditional up-front grants, RetroPGF is distributed *after* impact has already been made and there is never a 100% likelihood that any given project will be rewarded. We've done our best in this repository to reflect tasks that are likely to be valuable to the Optimism Collective ecosystem and have specified the potential impact of each project in the "Impact" section of each task. Existence of a project within this repository does NOT guarantee that the project will be rewarded via RetroPGF.
 
 Please feel free to liberally use the comment section of a task to ask clarifying questions that might help you make a decision of whether or not to work on a project.
 
 ### Foundation Mission (RFP) Grants
 
-Most of the [Foundation Missions (RFPs)](https://github.com/ethereum-optimism/ecosystem-contributions#%EF%B8%8F-foundation-missions-rfps) within this repository include attached OP token grants that are distributed on completion of the proposed project. Foundation Missions, unlike other contribution types in this repository, typically have an application period during which teams can propose to work on a given Mission. A limited number of teams are selected for these types of Foundation Missions, each of which receive the attached grant on completion of the Mission.
+Most of the [Foundation Missions (RFPs)](https://github.com/ethereum-optimism/ecosystem-contributions#%EF%B8%8F-foundation-missions-rfps) within this repository include attached OP token grants that are distributed on completion of the proposed project. Foundation Missions, unlike other contribution types in this repository, typically have an application period during which teams can propose to work on a given Mission. A limited number of teams are selected for these types of Foundation Missions, each of which receives the attached grant on completion of the Mission.
 
 Exact details about the size of the OP grant, the application process, and the number of teams that can be selected for a given Mission are all clearly defined on the GitHub issue describing that Mission.
 
