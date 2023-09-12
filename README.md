@@ -91,7 +91,7 @@ Looking for the perfect project? Try filtering by the [labels that we've attache
 
 ### Working on Foundation Missions (RFPs)
 
-Foundation Missions (RFPs) are the most formal type of project listed within this repository. Foundation Missions generally include OP token grants for completion and typically require teams to explicitly propose to work on a given task during an open proposal period. One or more teams are selected to work on the task (based on the parameters of the Mission) and OP token grants are distributed upon completion. You should refer to the exact details of the Mission you're interested in working on to get a better understanding of the working process.
+Foundation Missions (RFPs) are the most formal type of project listed within this repository. Foundation Missions generally include OP token grants for completion and typically require teams to explicitly propose to work on a given task during an open proposal period. One or more teams are selected to work on the task (based on the parameters of the Mission) and OP token grants are subject to a one year lock-up. You should refer to the exact details of the Mission you're interested in working on to get a better understanding of the working process.
 
 ### Working on Other Projects
 
