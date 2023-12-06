@@ -42,7 +42,7 @@ Ecosystem Project Ideas are ideas for projects that have clear value for the Opt
 
 Foundation Missions (aka RFPs) are proposals for specific initiatives that achieve an Optimism Collective **Intent** — a directional goal that helps the Collective align and work together. You can think of a Foundation Mission as an arrow aiming at the target (the Intent). Just as there are many paths an arrow might take on its way to a target, there are many different Foundation Missions that might accomplish an Intent.
 
-Foundation Missions, unlike the tasks listed in other categories, act as requests for proposals (RFPs) that teams can apply for. Generally, a limited number of teams are selected to work on a given Foundation Mission at any given time. Foundation Missions are also typically come with attached grants for the completion of the Mission.
+Unlike the tasks listed in other categories, Foundation Missions act as requests for proposals (RFPs) that teams can apply for. Generally, a limited number of teams are selected to work on a given Foundation Mission at any given time. Foundation Missions also typically come with attached grants for the completion of the Mission.
 
 [Click here to view all available Foundation Missions.](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Foundation+Mission+%28RFP%29%22)
 
@@ -70,6 +70,7 @@ Looking for the perfect project? Try filtering by the [labels that we've attache
 - [Tag: Governance](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Governance)
 - [Tag: OP Stack](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20OP%20Stack)
 - [Tag: DeFi](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Tag%3A+DeFi%22)
+- [Tag: RetroPGF](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Tag%3A+RetroPGF%22)
 - [Tag: Documentation](https://github.com/ethereum-optimism/ecosystem-contributions/issues?q=is%3Aissue+is%3Aopen+label%3A%22Tag%3A+Documentation%22)
 - [Tag: Meta](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Tag%3A%20Meta)
 
@@ -91,7 +92,7 @@ Looking for the perfect project? Try filtering by the [labels that we've attache
 
 ### Working on Foundation Missions (RFPs)
 
-Foundation Missions (RFPs) are the most formal type of project listed within this repository. Foundation Missions generally include OP token grants for completion and typically require teams to explicitly propose to work on a given task during an open proposal period. One or more teams are selected to work on the task (based on the parameters of the Mission) and OP token grants are distributed upon completion. You should refer to the exact details of the Mission you're interested in working on to get a better understanding of the working process.
+Foundation Missions (RFPs) are the most formal type of project listed within this repository. Foundation Missions generally include OP token grants for completion and typically require teams to explicitly propose to work on a given task during an open proposal period. One or more teams are selected to work on the task (based on the parameters of the Mission) and OP token grants are subject to a one year lock-up. You should refer to the exact details of the Mission you're interested in working on to get a better understanding of the working process.
 
 ### Working on Other Projects
 
@@ -110,6 +111,7 @@ RetroPGF rounds currently occur approximately once per quarter and will become m
 **Any project can be nominated for a RetroPGF round (including any completed project from this repository!).** Exact distribution details are determined by the set of badgeholders for a given round, the scope of the round, and the impact that each nominated project has had relative to its profit.
 
 RetroPGF is always a fantastic default option for being rewarded for the work that you do. Unlike traditional up-front grants, RetroPGF is distributed *after* impact has already been made and there is never a 100% likelihood that any given project will be rewarded. We've done our best in this repository to reflect tasks that are likely to be valuable to the Optimism Collective ecosystem and have specified the potential impact of each project in the "Impact" section of each task. The existence of a project within this repository does NOT guarantee that the project will be rewarded via RetroPGF.
+
 
 Please feel free to liberally use the comment section of a task to ask clarifying questions that might help you make a decision of whether or not to work on a project.
 
@@ -136,6 +138,7 @@ As of 2023-05-25, the following Governance Grant programs are currently active o
 ## Support and Additional Resources
 
 We want to do everything we can to help you be successful while working on your contribution. Here you'll find various resources and communities that may help you complete a project. Please also feel free to ask for support directly in the comments of the GitHub issue that corresponds to the project that you're working on. Members of the Optimism community check these comments daily to provide support.
+
 
 ### Communities
 

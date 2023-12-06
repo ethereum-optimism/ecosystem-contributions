@@ -1,10 +1,10 @@
 contact_links:
   - name: Token House Grants
-    url: https://foul-porch-0eb.notion.site/Optimism-Grants-Council-090bb648d1854136b9630c608da7a8bc
+    url: https://app.charmverse.io/op-grants/page-701220845245208
     about: Learn more about applying for a specific Grant from the Token House
   - name: Propose your own Mission
-    url: https://gov.optimism.io
+    url: https://gov.optimism.io/t/proposed-mission-template/5882
     about: Propose your own project to support Optimism that aligns with one of the Collective's intents. 
   - name: View Foundation Missions (RFPs)
-    url: https://gov.optimism.io
+    url: https://gov.optimism.io/t/token-house-missions/5881
     about: Review the Missions published by the Foundation to see if one is right for you! 
