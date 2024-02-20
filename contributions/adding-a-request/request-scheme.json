@@ -1,0 +1,77 @@
+{
+    "title": {
+        "description": "The title for the request.",
+        "char-limit": 75,
+        "type": "text"
+    },
+    "description": {
+        "description": "A description of the request. Covers the core ask of the request.",
+        "char-limit": 250,
+        "type": "text"
+    },
+    "lang": {
+        "description": "The language for the request",
+        "char-limit": 6,
+        "type": "single-option",
+        "options": [
+            {"ENG": "en-US"}
+        ]
+    },
+    "type": {
+        "description": "The type of request.",
+        "char-limit": 50,
+        "type": "single-option",
+        "options": [
+            "Project Idea",
+            "Foundation Mission Request",
+            "Delegate Mission Request"
+        ]
+    },
+    "category": {
+        "description": "The category of the request.",
+        "char-limit": 50,
+        "type": "single-option",
+        "options": [
+            "S5: Intent 1 - Progress towards technical decentralization",
+            "S5: Intent 2 - Grow the Superchain",
+            "S5: Intent 3 - Improve the Consumer Experience",
+            "S5: Intent 4 - Improve governance accessibility",
+            "Ecosystem Idea",
+            "Draft Idea",
+            "Mad Science Project Idea",
+            "Contribution Opportunity"
+        ]
+    },
+    "effort": {
+        "description": "The estimated effort needed to complete the request.",
+        "char-limit": 50,
+        "type": "single-option",
+        "options": [
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large"
+        ]
+    },
+    "labels": {
+        "description": "The labels for the request.",
+        "char-limit": 50,
+        "type": "multiple-options",
+        "options": [
+            "OP Stack",
+            "Attestations",
+            "Chain Infra",
+            "Consumer Apps",
+            "Smart Contracts",
+            "DeFi",
+            "Developer Tooling",
+            "Documentation",
+            "Gaming",
+            "Governance",
+            "NFTs",
+            "Protocol",
+            "Wallets",
+            "RetroPGF"
+        ]
+    }
+}
