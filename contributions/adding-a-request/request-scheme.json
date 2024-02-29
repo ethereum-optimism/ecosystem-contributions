@@ -27,24 +27,37 @@
     "type": "single-option",
     "options": [
       {
+        "id": "dev-tooling",
         "name": "Developer Tooling",
-        "description": "S5 intents are for decentralization"
+        "description": "Tooling to help developers build or deploy dapps for the Superchain."
       },
-      "S5: Intent 1 - Progress towards technical decentralization",
-      "S5: Intent 2 - Grow the Superchain",
-      "S5: Intent 3 - Improve the Consumer Experience",
-      "S5: Intent 4 - Improve governance accessibility",
-      "Ecosystem Idea",
-      "Draft Idea",
-      "Mad Science Project Idea",
-      "Contribution Opportunity"
+      {
+        "id": "dev-onboarding",
+        "name": "Developer Onboarding",
+        "description": "Tooling, guides & tutorials designed to onboard developers into the Superchain."
+      },
+      {
+        "id": "dev-experiment",
+        "name": "Developer Experimentation",
+        "description": "Technical experimentation for out there ideas. Lets test the bounds of what is possible!"
+      },
+      {
+        "id": "protocol-infra",
+        "name": "Protocol Infrastructure",
+        "description": "Infrastructure needed for protocols to run and be used, such as RPC providers, node infra, etc."
+      },
+      {
+        "id": "dapp-idea",
+        "name": "Dapp Idea",
+        "description": "An idea for a dapp that is currently missing in the Superchain ecosystem."
+      }
     ]
   },
   "url-link-groupings": {
     "options": [
       {
         "name": "retroPGF#4",
-        "categories": ["Developer Tooling", "Ecosystem Idea"]
+        "category-ids": ["dev-tooling", "dev-onboarding", "protocol-infra"]
       }
     ]
   },
@@ -52,13 +65,19 @@
     "description": "The estimated effort needed to complete the request.",
     "char-limit": 50,
     "type": "single-option",
-    "options": ["Small", "Medium", "Large", "Extra Large"]
+    "options": ["Tiny", "Small", "Medium", "Large", "Extra Large"]
   },
   "skillset": {
-    "description": "The labels for the request.",
+    "description": "The skill sets involved in building the idea.",
     "char-limit": 50,
     "type": "multiple-options",
-    "options": ["Front End", "Back End", "Full Stack", "Smart Contracts", "Protocol"]
+    "options": [
+        "Front End", 
+        "Back End", 
+        "Full Stack", 
+        "Smart Contracts", 
+        "Protocol"
+    ]
   },
   "labels": {
     "description": "The labels for the request.",
