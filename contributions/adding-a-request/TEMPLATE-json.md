@@ -7,13 +7,13 @@
     "authors": [""],
     "category": "",
     "effort": "",
-    "skillset": [""],
+    "skill-sets": [""],
     "labels": [""],
-    "contribution": {
+    "contributions": [{
         "contributors": [""],,
         "discussion-link": [""],
         "execution-status": ""
-    }
+    }]
 }
 ---
 
