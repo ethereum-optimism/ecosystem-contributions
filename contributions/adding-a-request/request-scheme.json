@@ -128,6 +128,7 @@
       "Smart Contracts",
       "Developer Tooling",
       "Documentation",
+      "Attestations",
       "DeFi",
       "Gaming",
       "Governance",
@@ -167,7 +168,7 @@
         {
           "id": "in-progress-closed",
           "name": "In Progress - Closed Contributor(s)",
-          "description": "This idea is being built, but the contributors are in a closed team. You can work on the idea by yourself or find a different idea."
+          "description": "This idea is being built, but the contributors are in a closed team. You can still work on the idea by yourself or with friends!"
         },
         {
           "id": "completed",

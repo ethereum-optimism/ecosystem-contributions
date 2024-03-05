@@ -4,14 +4,14 @@
     "description": "",
     "lang": "en-US",
     "type": "",
-    "authors": "",
+    "authors": [""],
     "category": "",
     "effort": "",
-    "skillset": {""},
-    "labels": {""},
+    "skillset": [""],
+    "labels": [""],
     "contribution": {
-        "contributors": [],
-        "discussion-link": "",
+        "contributors": [""],,
+        "discussion-link": [""],
         "execution-status": ""
     }
 }
