@@ -143,48 +143,51 @@
       "max-options": "99"
     }
   },
-  "contribution": {
-    "contributors": [],
-    "links": [],
-    "execution-status": [
-      {
-        "id": "not-started",
-        "name": "Not Started",
-        "description": "This idea does not currently have anyone working on it. Why don't you pick it up?"
-      },
-      {
-        "id": "in-discussion",
-        "name": "In Discussion",
-        "description": "This idea is being discussed. See the links section for where the discussion is taking place!"
-      },
-      {
-        "id": "in-progress-open",
-        "name": "In Progress - Open to Contributors",
-        "description": "This idea is being built, and the contributors are open to help! Jump into the discussion in links to get started!"
-      },
-      {
-        "id": "in-progress-closed",
-        "name": "In Progress - Closed Contributor(s)",
-        "description": "This idea is being built, but the contributors are in a closed team. You can work on the idea by yourself or find a different idea."
-      },
-      {
-        "id": "completed",
-        "name": "Completed",
-        "description": "The idea has been built! Check out the links for more info"
-      },
-      {
-        "id": "abandoned",
-        "name": "Abandoned",
-        "description": "The contributors working on this moved onto something else. Why don't you pick up where they left off?"
+  "contributions": 
+  [
+    {
+      "contributors": [],
+      "links": [],
+      "execution-status": [
+        {
+          "id": "not-started",
+          "name": "Not Started",
+          "description": "This idea does not currently have anyone working on it. Why don't you pick it up?"
+        },
+        {
+          "id": "in-discussion",
+          "name": "In Discussion",
+          "description": "This idea is being discussed. See the links section for where the discussion is taking place!"
+        },
+        {
+          "id": "in-progress-open",
+          "name": "In Progress - Open to Contributors",
+          "description": "This idea is being built, and the contributors are open to help! Jump into the discussion in links to get started!"
+        },
+        {
+          "id": "in-progress-closed",
+          "name": "In Progress - Closed Contributor(s)",
+          "description": "This idea is being built, but the contributors are in a closed team. You can work on the idea by yourself or find a different idea."
+        },
+        {
+          "id": "completed",
+          "name": "Completed",
+          "description": "The idea has been built! Check out the links for more info"
+        },
+        {
+          "id": "abandoned",
+          "name": "Abandoned",
+          "description": "The contributors working on this moved onto something else. Why don't you pick up where they left off?"
+        }
+      ],
+      "validation": {
+        "char-limit": 50,
+        "optional": "true",
+        "min-options": "",
+        "max-options": ""
       }
-    ],
-    "validation": {
-      "char-limit": 50,
-      "optional": "true",
-      "min-options": "",
-      "max-options": ""
     }
-  },
+  ],
   "url-link-groupings": {
     "options": [
       {
