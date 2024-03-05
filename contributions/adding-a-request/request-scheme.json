@@ -1,29 +1,48 @@
 {
   "title": {
     "description": "The title for the request.",
-    "char-limit": 75,
-    "type": "text"
+    "type": "text",
+    "validation": {
+      "char-limit": 75,
+      "optional": "false",
+      "min-options": "",
+      "max-options": ""
+    }
   },
   "description": {
     "description": "A description of the request. Covers the core ask of the request.",
-    "char-limit": 250,
-    "type": "text"
+    "type": "text",
+    "validation": {
+      "char-limit": 250,
+      "optional": "false",
+      "min-options": "",
+      "max-options": ""
+    }
   },
   "lang": {
     "description": "The language for the request",
-    "char-limit": 6,
     "type": "single-option",
-    "options": [{ "ENG": "en-US" }]
+    "options": [{ "ENG": "en-US" }],
+    "validation": {
+      "char-limit": 6,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "1"
+    }
   },
   "type": {
     "description": "The type of request.  Ideas List 2.0 ONLY has Project Ideas.",
-    "char-limit": 50,
     "type": "single-option",
-    "options": ["Project Idea"]
+    "options": ["Project Idea"],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "1"
+    }
   },
   "category": {
     "description": "The category of the request.",
-    "char-limit": 50,
     "type": "single-option",
     "options": [
       {
@@ -51,7 +70,85 @@
         "name": "Dapp Idea",
         "description": "An idea for a dapp that is currently missing in the Superchain ecosystem."
       }
-    ]
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "1"
+    }
+  },
+  "effort": {
+    "description": "The estimated effort needed to complete the request.",
+    "options": ["Tiny", "Small", "Medium", "Large", "Extra Large"],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "1"
+    }
+  },
+  "skillset": {
+    "description": "The skill sets involved in building the idea.",
+    "options": [
+        "Front End Development", 
+        "Back End Development", 
+        "Full Stack Development", 
+        "Smart Contract Development", 
+        "Protocol Development",
+        "Education",
+        "Content Creation"
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "99"
+    }
+  },
+  "labels": {
+    "description": "The labels for the request.",
+    "options": [
+      "OP Stack",
+      "Attestations",
+      "Chain Infrastructure",
+      "Consumer dApps",
+      "Smart Contracts",
+      "Developer Tooling",
+      "Documentation",
+      "DeFi",
+      "Gaming",
+      "Governance",
+      "NFTs",
+      "Protocol",
+      "Wallets"
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "99"
+    }
+  },
+  "contribution": {
+    "contributors": [],
+    "links": [
+
+    ],
+    "execution-status": [
+      "Not Started",
+      "In Discussion",
+      "In Progress - Open to Contributors",
+      "In Progress - Closed Contributor(s)",
+      "Completed",
+      "Abandoned"
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "true",
+      "min-options": "",
+      "max-options": ""
+    }
   },
   "url-link-groupings": {
     "options": [
@@ -59,45 +156,6 @@
         "name": "retroPGF#4",
         "category-ids": ["dev-tooling", "dev-onboarding", "protocol-infra"]
       }
-    ]
-  },
-  "effort": {
-    "description": "The estimated effort needed to complete the request.",
-    "char-limit": 50,
-    "type": "single-option",
-    "options": ["Tiny", "Small", "Medium", "Large", "Extra Large"]
-  },
-  "skillset": {
-    "description": "The skill sets involved in building the idea.",
-    "char-limit": 50,
-    "type": "multiple-options",
-    "options": [
-        "Front End", 
-        "Back End", 
-        "Full Stack", 
-        "Smart Contracts", 
-        "Protocol"
-    ]
-  },
-  "labels": {
-    "description": "The labels for the request.",
-    "char-limit": 50,
-    "type": "multiple-options",
-    "options": [
-      "OP Stack",
-      "Attestations",
-      "Chain Infra",
-      "Consumer Apps",
-      "Smart Contracts",
-      "DeFi",
-      "Developer Tooling",
-      "Documentation",
-      "Gaming",
-      "Governance",
-      "NFTs",
-      "Protocol",
-      "Wallets",
-      "RetroPGF"
     ]
   }
 }
