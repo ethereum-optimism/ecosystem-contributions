@@ -1,8 +1,9 @@
 ---
-title: ""Template""
-description: ""Template 250 char description of the contribution.""
+title: """"
+description: """"
 lang: ""en-US""
-type: ""Project Idea""
+type: """"
+authors: """",
 category: """"
 effort: """"
 skillset: """"

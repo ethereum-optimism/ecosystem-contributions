@@ -2,12 +2,13 @@
 {
     "title": "",
     "description": "",
-    "lang": "",
+    "lang": "en-US",
     "type": "",
+    "authors": "",
     "category": "",
     "effort": "",
-    "skillset": "",
-    "labels": "",
+    "skillset": {""},
+    "labels": {""},
     "contribution": {
         "contributors": [],
         "discussion-link": "",

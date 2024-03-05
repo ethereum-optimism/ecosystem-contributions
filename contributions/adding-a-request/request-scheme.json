@@ -33,12 +33,24 @@
   "type": {
     "description": "The type of request.  Ideas List 2.0 ONLY has Project Ideas.",
     "type": "single-option",
-    "options": ["Project Idea"],
+    "options": [
+      "Draft Project Idea",
+      "Project Idea"
+    ],
     "validation": {
       "char-limit": 50,
       "optional": "false",
       "min-options": "1",
       "max-options": "1"
+    }
+  },
+  "authors": {
+    "description": "The author.",
+    "validation": {
+      "char-limit": 250,
+      "optional": "true",
+      "min-options": "",
+      "max-options": ""
     }
   },
   "category": {
@@ -121,6 +133,7 @@
       "Governance",
       "NFTs",
       "Protocol",
+      "DeSocial",
       "Wallets"
     ],
     "validation": {
@@ -132,16 +145,38 @@
   },
   "contribution": {
     "contributors": [],
-    "links": [
-
-    ],
+    "links": [],
     "execution-status": [
-      "Not Started",
-      "In Discussion",
-      "In Progress - Open to Contributors",
-      "In Progress - Closed Contributor(s)",
-      "Completed",
-      "Abandoned"
+      {
+        "id": "not-started",
+        "name": "Not Started",
+        "description": "This idea does not currently have anyone working on it. Why don't you pick it up?"
+      },
+      {
+        "id": "in-discussion",
+        "name": "In Discussion",
+        "description": "This idea is being discussed. See the links section for where the discussion is taking place!"
+      },
+      {
+        "id": "in-progress-open",
+        "name": "In Progress - Open to Contributors",
+        "description": "This idea is being built, and the contributors are open to help! Jump into the discussion in links to get started!"
+      },
+      {
+        "id": "in-progress-closed",
+        "name": "In Progress - Closed Contributor(s)",
+        "description": "This idea is being built, but the contributors are in a closed team. You can work on the idea by yourself or find a different idea."
+      },
+      {
+        "id": "completed",
+        "name": "Completed",
+        "description": "The idea has been built! Check out the links for more info"
+      },
+      {
+        "id": "abandoned",
+        "name": "Abandoned",
+        "description": "The contributors working on this moved onto something else. Why don't you pick up where they left off?"
+      }
     ],
     "validation": {
       "char-limit": 50,
