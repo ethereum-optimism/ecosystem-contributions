@@ -1,17 +1,20 @@
 ---
-title: """"
-description: """"
-lang: ""en-US""
-type: """"
-authors: [""""]
-category: """"
-effort: """"
-skill-sets: [""""]
-labels: [""""]
+title: ""
+description: ""
+lang: "en-US"
+type: ""
+authors: [""]
+category: ""
+effort: ""
+skill-sets: [""]
+labels: [""]
 contributions: [
-    contributors: [""""]
-    discussion-link: [""""]
-    execution-status: """"
+    {
+        contributors: [""]
+        discussion-link: ""
+        links: [""]
+        execution-status: ""
+    }
 ]
 ---
 
