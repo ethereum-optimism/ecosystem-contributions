@@ -1,17 +1,17 @@
 ---
-title: ""Onchain Activity Feed""
-description: ""Create an app that allows you to easily visualize the activities of addresses that you interact with.""
-lang: ""en-US""
-type: ""Draft Project Idea""
-authors: [""@smartcontracts (GitHub) - OP Labs""]
-category: ""dapp-idea""
-effort: ""Large""
-skillset: [""Smart Contract Development"", ""Full Stack Development""]
-labels: [""DeSocial"", ""Attestations""]
+title: "Onchain Activity Feed"
+description: "Create an app that allows you to easily visualize the activities of addresses that you interact with."
+lang: "en-US"
+type: "Draft Project Idea"
+authors: ["@smartcontracts (GitHub) - OP Labs"]
+category: "dapp-idea"
+effort: "Large"
+skillset: ["Smart Contract Development", "Full Stack Development"]
+labels: ["DeSocial", "Attestations"]
 contribution:
-    contributors: [""@amanwithwings (GitHub) - DeepDAO""]
-    discussion-link: [""https://github.com/ethereum-optimism/ecosystem-contributions/issues/33""]
-    execution-status: ""abandoned""
+    contributors: ["@amanwithwings (GitHub) - DeepDAO"]
+    discussion-link: ["https://github.com/ethereum-optimism/ecosystem-contributions/issues/33"]
+    execution-status: "abandoned"
 ---
 
 # Onchain Activity Feed
