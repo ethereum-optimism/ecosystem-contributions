@@ -1,0 +1,196 @@
+{
+  "title": {
+    "description": "The title for the request.",
+    "type": "text",
+    "validation": {
+      "char-limit": 75,
+      "optional": "false",
+      "min-options": "",
+      "max-options": ""
+    }
+  },
+  "description": {
+    "description": "A description of the request. Covers the core ask of the request.",
+    "type": "text",
+    "validation": {
+      "char-limit": 250,
+      "optional": "false",
+      "min-options": "",
+      "max-options": ""
+    }
+  },
+  "lang": {
+    "description": "The language for the request.",
+    "type": "single-option",
+    "options": [{ "ENG": "en-US" }],
+    "validation": {
+      "char-limit": 6,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "1"
+    }
+  },
+  "type": {
+    "description": "The type of request.  Ideas List 2.0 ONLY has (draft and) Project Ideas.",
+    "type": "single-option",
+    "options": [
+      "Draft Project Idea",
+      "Project Idea"
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "1"
+    }
+  },
+  "authors": {
+    "description": "The author (platform) - organisation.",
+    "validation": {
+      "char-limit": 250,
+      "optional": "true",
+      "min-options": "",
+      "max-options": ""
+    }
+  },
+  "category": {
+    "description": "The category of the request.",
+    "type": "single-option",
+    "options": [
+      {
+        "id": "dev-tooling",
+        "name": "Developer Tooling",
+        "description": "Tooling to help developers build or deploy dapps for the Superchain."
+      },
+      {
+        "id": "dev-onboarding",
+        "name": "Developer Onboarding",
+        "description": "Tooling, guides & tutorials designed to onboard developers into the Superchain."
+      },
+      {
+        "id": "dev-experiment",
+        "name": "Developer Experimentation",
+        "description": "Technical experimentation for out there ideas. Lets test the bounds of what is possible!"
+      },
+      {
+        "id": "protocol-infra",
+        "name": "Protocol Infrastructure",
+        "description": "Infrastructure needed for protocols to run and be used, such as RPC providers, node infra, etc."
+      },
+      {
+        "id": "dapp-idea",
+        "name": "Dapp Idea",
+        "description": "An idea for a dapp that is currently missing in the Superchain ecosystem."
+      }
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "1"
+    }
+  },
+  "effort": {
+    "description": "The estimated effort needed to complete the request.",
+    "options": ["Tiny", "Small", "Medium", "Large", "Extra Large"],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "1"
+    }
+  },
+  "skill-sets": {
+    "description": "The skill sets involved in building the idea.",
+    "options": [
+        "Front End Development", 
+        "Back End Development", 
+        "Full Stack Development", 
+        "Smart Contract Development", 
+        "Protocol Development",
+        "Education",
+        "Content Creation"
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "99"
+    }
+  },
+  "labels": {
+    "description": "The labels for the request.",
+    "options": [
+      "OP Stack",
+      "Chain Infrastructure",
+      "Consumer dApps",
+      "Smart Contracts",
+      "Developer Tooling",
+      "Documentation",
+      "Attestations",
+      "DeFi",
+      "Gaming",
+      "Governance",
+      "NFTs",
+      "Protocol",
+      "DeSocial",
+      "Wallets"
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "false",
+      "min-options": "1",
+      "max-options": "99"
+    }
+  },
+  "contributions": {
+    "contributors": [],
+    "links": [],
+    "execution-status": [
+      {
+        "id": "not-started",
+        "name": "Not Started",
+        "description": "This idea does not currently have anyone working on it. Why don't you pick it up?"
+      },
+      {
+        "id": "in-discussion",
+        "name": "In Discussion",
+        "description": "This idea is being discussed. See the links section for where the discussion is taking place!"
+      },
+      {
+        "id": "in-progress-open",
+        "name": "In Progress - Open",
+        "description": "This idea is being built, and the contributors are open to help! Jump into the discussion in links to get started!"
+      },
+      {
+        "id": "in-progress-closed",
+        "name": "In Progress - Closed",
+        "description": "This idea is being built, but the contributors are in a closed team. You can still work on the idea by yourself or with friends!"
+      },
+      {
+        "id": "completed",
+        "name": "Completed",
+        "description": "The idea has been built! Check out the links for more info"
+      },
+      {
+        "id": "abandoned",
+        "name": "Abandoned",
+        "description": "The contributors working on this moved onto something else. Why don't you pick up where they left off?"
+      }
+    ],
+    "validation": {
+      "char-limit": 50,
+      "optional": "true",
+      "min-options": "1",
+      "max-options": "1"
+    }
+  },
+  "url-link-groupings": {
+    "options": [
+      {
+        "name": "retroPGF#4-example",
+        "category-ids": ["dev-tooling", "dev-onboarding", "protocol-infra"]
+      }
+    ]
+  }
+}

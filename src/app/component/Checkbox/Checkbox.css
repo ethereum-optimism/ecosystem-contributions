@@ -1,0 +1,109 @@
+.mcui-checkbox {
+    display: flex;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    gap: 0.25rem;
+    padding: 0.125rem 0.25rem;
+}
+.mcui-checkbox input[type=checkbox] {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.mcui-checkbox input[type=checkbox] + div{
+    border: 2px solid #8d9aa9;
+    height: 1.25rem;
+    width: 1.25rem;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: relative;
+  
+}
+.mcui-checkbox input[type=checkbox] ~ div:last-child{
+    padding-left: 0.5em;
+}
+
+.mcui-checkbox input[type=checkbox]:focus + div,
+.mcui-checkbox input[type=checkbox]:active + div {
+    outline-offset: 2px;
+}
+.mcui-checkbox input[type=checkbox]:checked + div{
+    border-color: #313131;
+    transition: border-color 200ms cubic-bezier(0.65, 0.25, 0.56, 0.96);
+    background-color: #595959;
+    transition: background-color 200ms cubic-bezier(0.65, 0.25, 0.56, 0.96);
+}
+  
+.mcui-checkbox input[type=checkbox]:checked + div .mcui-check {
+    opacity: 1;
+    transition: opacity 200ms cubic-bezier(0.65, 0.25, 0.56, 0.96);
+}
+.mcui-checkbox input[type=checkbox]:checked + div .mcui-check polyline{
+    -webkit-animation: dash-check 200ms cubic-bezier(0.65, 0.25, 0.56, 0.96) forwards;
+    animation: dash-check 200ms cubic-bezier(0.65, 0.25, 0.56, 0.96) forwards;
+}
+
+.mcui-checkbox input[type=radio]:checked + div{
+    border-color: #313131;
+}
+
+.mcui-checkbox input[type=radio]:checked + div::after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.mcui-checkbox input[type=checkbox]:indeterminate + div::after{
+    content: "";
+    height: 4px;
+    width: 60%;
+    left: 20%;
+    top: calc(50% - 2px);
+    position: absolute;
+    background: #8d9aa9;
+    border-radius: 1px;
+}
+.mcui-checkbox input[type=checkbox]:disabled ~ div{
+    color: #8d9aa9;
+    cursor: not-allowed;
+}
+.mcui-checkbox input[type=checkbox]:enabled ~ div {
+    cursor: pointer;
+}
+  
+.mcui-check {
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    color: rgb(255, 255, 255);
+    opacity: 0;
+}
+.mcui-check polyline {
+    fill: none;
+    transform-origin: 50% 50%;
+    stroke-width: 4px;
+    stroke-dasharray: 22.7713679002;
+    stroke: currentcolor;
+}
+  
+@supports (display: grid) {
+    .mcui-check polyline {
+      stroke-dashoffset: 22.7713679002;
+    }
+  }
+@-webkit-keyframes dash-check {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+@keyframes dash-check {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
