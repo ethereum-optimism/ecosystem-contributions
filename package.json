@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "pnpm run prebuild && next build",
+    "build:unprocessed": "next build",
     "start": "next start",
     "lint": "next lint",
     "preinstall": "npx only-allow pnpm",
     "clean": "node ./data/cleanBlankSpace.mjs",
-    "process": "node ./data/processMarkDown.mjs"
+    "process": "node ./data/processMarkDown.mjs",
+    "prebuild": "pnpm run clean && pnpm run process"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",

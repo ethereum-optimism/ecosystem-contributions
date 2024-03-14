@@ -11,7 +11,7 @@ const Footer = ({ color = 'bg-white' }: FooterProps) => {
       <div className="flex flex-row items-center justify-center gap-x-2 text-gray-700">
         <h6 className=" ">© 2024 Optimism</h6>
         <div>|</div>
-        <p className="flex justify-center items-center  ">
+        <div className="flex justify-center items-center">
           <span>Made With</span>
           <span className="mx-1">
             <Heart />
@@ -29,7 +29,7 @@ const Footer = ({ color = 'bg-white' }: FooterProps) => {
             </div>
             <div>Catalyzt</div>
           </a>
-        </p>
+        </div>
       </div>
     </footer>
   )

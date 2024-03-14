@@ -1,3 +1,4 @@
+
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -22,7 +23,7 @@ async function getResources(file: string): Promise<MarkDownData | string> {
 async function getMarkDownData(id: string): Promise<MarkDownData | string> {
   const encodedFileName = encodeURIComponent(id)
   const fullPath =
-    path.join(process.cwd(), 'public', 'static', 'markdown', encodedFileName) +
+    path.join(process.cwd(), 'contributions', encodedFileName) +
     '.md'
 
   try {
@@ -66,10 +67,10 @@ export default async function page({ params }: { params: { id: string } }) {
   return (
     <>
       <div className=" bg-gray-50">
-        {/* <div className="lg:px-[4rem] xl:px-[10rem] lg:py-8">
+        <div className="lg:px-[4rem] xl:px-[10rem] lg:py-8">
           <BreadCrump content={content} />
-        </div> */}
-        <div className="lg:px-[4rem] lg:py-[1rem] xl:px-[10rem] xl:py-[1.5rem] flex justify-center">
+        </div>
+        <div className="lg:px-[4rem] lg:pb-[1rem] xl:px-[10rem] xl:pb-[1.5rem] flex justify-center">
           <Cpage content={content} />
         </div>
       </div>
