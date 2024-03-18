@@ -63,7 +63,7 @@ async function getOverViewData(id: string): Promise<LoadMarkDownType | string> {
 }
 
 export const metadata: Metadata = {
-  title: 'Builder Ideas',
+  title: 'Builder List',
   description: 'Explore ideas for your next project.',
 }
 
