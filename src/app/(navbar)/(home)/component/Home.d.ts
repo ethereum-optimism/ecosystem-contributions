@@ -33,8 +33,8 @@ export interface MarkDownData extends LoadMarkDownType {
     category: string;
     effort: string;
     labels: string[];
-    skillsets: string[];
-    contribution: {
+    "skill-sets": string[];
+    contributions: {
         contributors: string[],
         "discussion-link": string,
         links: string[];
