@@ -8,7 +8,7 @@ import {
   TabStateType,
 } from './component/Home'
 import DialogFilter from './component/Dialog/DialogFilter'
-import { categoryKeyAndValue, newFilter } from './Text'
+import { newFilter } from './Text'
 import DrawerFilter from './component/DrawerFilter'
 import ProjectTab from './component/ProjectTab'
 import OverViewTab from './component/OverViewTab'
@@ -88,7 +88,7 @@ export default function Cpage({ markdownContents, overViewData }: HomeProps) {
       const skillSetsCondition =
         checkBox['SkillSets'].length !== 0
           ? checkBox['SkillSets'].some((elem) =>
-              item.skillsets.some((subElem) => subElem === elem)
+              item["skill-sets"].some((subElem) => subElem === elem)
             )
           : true
 
@@ -107,7 +107,7 @@ export default function Cpage({ markdownContents, overViewData }: HomeProps) {
       let executionCondition: any
       if (checkBox['ExecutionStatus'].length !== 0) {
         let executionId = newFilter['execution-status'].find(
-          (elem) => elem.name === item.contribution['execution-status']
+          (elem) => elem.name === item.contributions['execution-status']
         )?.id
         executionCondition = checkBox['ExecutionStatus'].some(
           (elem) => elem === executionId
@@ -228,8 +228,14 @@ export default function Cpage({ markdownContents, overViewData }: HomeProps) {
     }
   }, [sectionDetector])
 
+
+  // const router = useRouter()
+
+
+
   return (
     <>
+
       {/* 
                 ─█▀▀█ ░█─── ░█─── 　 ░█▀▀█ ▀▀█▀▀ ░█▄─░█ 
                 ░█▄▄█ ░█─── ░█─── 　 ░█▀▀▄ ─░█── ░█░█░█ 

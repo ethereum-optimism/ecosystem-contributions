@@ -8,7 +8,7 @@ import { remark } from 'remark'
 import html from 'remark-html'
 import Custom500 from '../../custom-error'
 import Footer from '../../component/footer/Footer'
-
+import { Metadata } from 'next'
 async function getResources(): Promise<{
   jsonData: Omit<MarkDownData, 'contentHtml'>[]
   overViewData: string | LoadMarkDownType
@@ -62,6 +62,12 @@ async function getOverViewData(id: string): Promise<LoadMarkDownType | string> {
   }
 }
 
+export const metadata: Metadata = {
+  title: 'Builder Ideas',
+  description: 'Explore ideas for your next project.',
+}
+
+
 export default async function Home() {
   const { jsonData, overViewData } = await getResources()
   if (typeof overViewData === 'string') {
@@ -76,6 +82,7 @@ export default async function Home() {
 
   return (
     <>
+
       <div className="min-h-screen">
         <div className="px-4  md:px-[4rem] lg:px-[8rem] py-[2.5rem] bg-gradient-to-b  from-[#ffe6e6] text-gray-300 to-white">
           <div className="pt-20 md:pt-14 md:my-8">
