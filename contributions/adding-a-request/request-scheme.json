@@ -92,7 +92,13 @@
   },
   "effort": {
     "description": "The estimated effort needed to complete the request.",
-    "options": ["Tiny", "Small", "Medium", "Large", "Extra Large"],
+    "options": [
+      "Tiny",
+      "Small", 
+      "Medium", 
+      "Large", 
+      "Extra Large"
+    ],
     "validation": {
       "char-limit": 50,
       "optional": "false",
@@ -108,6 +114,7 @@
         "Full Stack Development", 
         "Smart Contract Development", 
         "Protocol Development",
+        "Data Analysis",
         "Education",
         "Content Creation"
     ],
@@ -134,7 +141,8 @@
       "NFTs",
       "Protocol",
       "DeSocial",
-      "Wallets"
+      "Wallets",
+      "Accessibility/Transparency"
     ],
     "validation": {
       "char-limit": 50,

@@ -3,11 +3,11 @@ title: "Visalize OP Mainnet Transaction Flow"
 description: "This visualizer, ideally presented as an interactive website, would provide real-time insights into transaction flows, giving users a new way to engage with OP Mainnet."
 lang: "en-US"
 type: "Draft Project Idea"
-authors: ["@smartcontracts | GitHub"]
+authors: ["@smartcontracts (GitHub) @ OP Labs"]
 category: "dev-tooling"
 effort: "Large"
 skill-sets: ["Protocol Development", "Back End Development", "Full Stack Development", "Front End Development"]
-labels: ["OP Stack", "Developer Tooling"]
+labels: ["OP Stack", "Developer Tooling", "Accessibility/Transparency"]
 contributions: [
     {
         contributors: [""]
@@ -22,7 +22,7 @@ contributions: [
 
 ## Summary
 
-A significant part of understanding the state and health of a blockchain lies in the transaction activity. Transactions come in many types and offer a wealth of information about the on-chain activity. Despite the abundance of data, there's a lack of deeper dimensional visualization tools that extend beyond simple total transaction counts. To address this, a proposal for the development of a transaction visualizer is put forward. This visualizer, ideally presented as an interactive website, would provide real-time insights into transaction flows, giving users a new way to engage with OP Mainnet.
+A significant part of understanding the state and health of a blockchain lies in the transaction activity. Transactions come in many types and offer a wealth of information about the on-chain activity. Despite the abundance of data, there's a lack of deeper dimensional visualization tools that extend beyond simple total transaction counts. This visualizer, ideally presented as an interactive website, would provide real-time insights into transaction flows, giving users a new way to engage with OP Mainnet.
 
 ## Possible Features
 

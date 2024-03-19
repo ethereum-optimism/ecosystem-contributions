@@ -20,4 +20,14 @@ contributions: [
 
 # Title
 
-Description of the request/idea/contribution. 
+## Summary
+
+
+
+## Possible Features 
+
+-
+
+## Why this is cool 
+
+OPTIONAL
