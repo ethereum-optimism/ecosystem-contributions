@@ -3,7 +3,7 @@ title: ""
 description: ""
 lang: "en-US"
 type: ""
-authors: [""]
+authors: ["@handle (platform) @ Org"]
 category: ""
 effort: ""
 skill-sets: [""]
