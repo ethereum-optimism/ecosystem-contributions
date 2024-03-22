@@ -35,13 +35,13 @@ export default function ListCard({
                 <tr className="border" key={i}>
                   <th className="p-5 flex flex-col">
                     <div
-                      data-tooltip-id={item.contribution['execution-status']}
+                      data-tooltip-id={item.contributions['execution-status']}
                       className="flex gap-1 items-center py-0.5 px-1 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50 w-fit mb-2"
                     >
-                      {handleStatus(item.contribution['execution-status'])}
+                      {handleStatus(item.contributions['execution-status'])}
                       <ReactTooltip
                         opacity={100}
-                        id={item.contribution['execution-status']}
+                        id={item.contributions['execution-status']}
                         place="top"
                         variant="error"
                         style={{ zIndex: 99 }}
@@ -50,7 +50,7 @@ export default function ListCard({
                           newFilter['execution-status'].find(
                             (elem) =>
                               elem.name ===
-                              item.contribution['execution-status']
+                              item.contributions['execution-status']
                           )?.description
                         }
                       />
