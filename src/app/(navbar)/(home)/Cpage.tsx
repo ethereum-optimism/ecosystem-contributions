@@ -133,7 +133,7 @@ export default function Cpage({ markdownContents, overViewData }: HomeProps) {
         executionCondition
       )
     })
-  }, [markdownContents, search, checkBox, newFilter])
+  }, [markdownContents, search, checkBox])
 
   const pageCount = useMemo(() => {
     return Math.ceil(filteredMarkdownContent.length / itemsPerPage)
