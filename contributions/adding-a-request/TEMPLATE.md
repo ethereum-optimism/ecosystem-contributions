@@ -8,14 +8,11 @@ category: ""
 effort: ""
 skill-sets: [""]
 labels: [""]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # Title

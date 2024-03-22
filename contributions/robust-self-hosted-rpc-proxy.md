@@ -8,14 +8,11 @@ category: "dev-tooling"
 effort: "Large"
 skill-sets: ["Full Stack Development", "Protocol Development"]
 labels: ["Developer Tooling", "Accessibility/Transparency", "Chain Infrastructure"]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # Simple Robust Self-Hosted RPC Proxy

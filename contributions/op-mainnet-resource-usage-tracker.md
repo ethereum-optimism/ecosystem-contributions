@@ -8,14 +8,11 @@ category: "dev-tooling"
 effort: "Large"
 skill-sets: ["Front End Development", "Data Analysis", "Full Stack Development"]
 labels: ["Accessibility/Transparency", "Developer Tooling", "OP Stack"]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # OP Mainnet Resource Usage Tracker

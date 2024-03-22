@@ -8,14 +8,11 @@ category: "dev-onboarding"
 effort: "Large"
 skill-sets: ["Documentation", "Education", "Research", "Front End Development"]
 labels: ["Documentation", "Accessibility/Transparency", "Education", "DeFi"]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # Liquidity Types Explainer

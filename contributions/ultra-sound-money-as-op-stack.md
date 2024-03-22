@@ -8,14 +8,11 @@ category: "dapp-idea"
 effort: "Large"
 skill-sets: ["Protocol Development", "Back End Development", "Full Stack Development"]
 labels: ["OP Stack", "Documentation"]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # Ultra Sound Money as an OP Stack Chain

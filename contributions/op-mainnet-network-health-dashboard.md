@@ -8,14 +8,11 @@ category: "dev-tooling"
 effort: "Medium"
 skill-sets: ["Data Analysis", "Front End Development", "Full Stack Development"]
 labels: ["Documentation", "Developer Tooling", "Accessibility/Transparency"]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # Public OP Mainnet Network Health Dashboard

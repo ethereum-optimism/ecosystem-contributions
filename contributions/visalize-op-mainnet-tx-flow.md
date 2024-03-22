@@ -8,14 +8,11 @@ category: "dev-tooling"
 effort: "Large"
 skill-sets: ["Protocol Development", "Back End Development", "Full Stack Development", "Front End Development"]
 labels: ["OP Stack", "Developer Tooling", "Accessibility/Transparency"]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # Visalize OP Mainnet Transaction Flow

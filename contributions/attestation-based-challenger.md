@@ -8,14 +8,11 @@ category: "protocol-infra"
 effort: "Large"
 skill-sets: ["Protocol Development", "Full Stack Development", "Smart Contract Development"]
 labels: ["Attestations", "Chain Infrastructure", "Smart Contracts", "Protocol"]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # Attestation-Based Challenger
