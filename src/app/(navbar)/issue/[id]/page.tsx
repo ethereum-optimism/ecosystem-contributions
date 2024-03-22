@@ -9,6 +9,7 @@ import BreadCrump from './_component/BreadCrump'
 import Cpage from './Cpage'
 import Custom500 from '../../../custom-error'
 import Footer from '@/src/app/component/footer/Footer'
+import { Metadata } from 'next'
 
 async function getResources(file: string): Promise<MarkDownData | string> {
   try {
@@ -51,6 +52,12 @@ async function getMarkDownData(id: string): Promise<MarkDownData | string> {
   }
 }
 
+
+export const metadata: Metadata = {
+  title: 'Issue',
+  description: 'Explore ideas for your next project.',
+}
+
 export default async function page({ params }: { params: { id: string } }) {
   const content = await getResources(params.id)
 
@@ -66,7 +73,7 @@ export default async function page({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <div className=" bg-gray-50">
+    <div className=" bg-gray-50">
         <div className="lg:px-[4rem] xl:px-[10rem] lg:py-8">
           <BreadCrump content={content} />
         </div>

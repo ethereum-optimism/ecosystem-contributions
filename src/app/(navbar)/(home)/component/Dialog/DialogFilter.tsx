@@ -9,7 +9,6 @@ import {
   CheckBoxEffort,
   CheckBoxExecutionStatus,
   CheckBoxSkillsets,
-  CheckBoxType,
 } from '../Filter/CheckBox'
 import { newFilter } from '../../Text'
 

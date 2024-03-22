@@ -81,7 +81,7 @@ export default function DrawerNav({
               <Dialog.Panel className="w-full h-full transform overflow-hidden bg-white  text-left align-middle shadow-xl transition-all  overflow-y-auto">
                 <Dialog.Title
                   as="div"
-                  className="flex justify-between items-center px-6 h-16 mr-4"
+                  className="flex justify-between items-center px-6 h-[4.5em] mr-4"
                 >
                   <Link
                     className="text-custom-red font-rubik !font-semibold "

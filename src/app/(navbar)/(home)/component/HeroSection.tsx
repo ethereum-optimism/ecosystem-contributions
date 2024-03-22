@@ -16,7 +16,7 @@ export default function HeroSection() {
       </div>
       <div className="flex flex-col text-center md:col-span-5 md:text-left animate-slideleft duration-200">
         <h6 className="text-slate-900 text-5xl font-semibold font-rubik ">
-          Welcome to Builder Ideas
+          Welcome to The Builder List
         </h6>
         <p className="text-slate-600 text-sm font-normal mx-8 md:mx-0 my-6 ">
           Join the Optimism Collective: Shape the Future, Discover

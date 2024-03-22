@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
 import './globals.css'
 import { Inter, Rubik } from 'next/font/google'
+import { RouteChangeListener } from './component/routeListener';
 
 const interFont = Inter({
   subsets: ["latin"],
@@ -15,10 +15,10 @@ const rubikFont = Rubik({
 });
 
 
-export const metadata: Metadata = {
-  title: 'Buider Ideas',
-  description: 'Explore ideas for your next project.',
-}
+// export const metadata: Metadata = {
+//   title: 'Buider Ideas',
+//   description: 'Explore ideas for your next project.',
+// }
 
 export default function RootLayout({
   children,
@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${interFont.variable} ${rubikFont.variable} `}>
+        <RouteChangeListener/>
         <div className="font-inter  ">
           {children}
         </div>

@@ -11,6 +11,8 @@ export default function Cpage({ content }: { content: MarkDownData }) {
 
   return (
     <>
+
+
       <div className="sticky top-24 h-fit min-h-[calc(100vh-72px-6rem-3.5rem)]">
         <ScrollSpy
           overViewRef={overViewRef}
