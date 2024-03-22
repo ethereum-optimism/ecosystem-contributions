@@ -1,18 +1,18 @@
-import Filter from "@/public/static/filter/filter.json"
+import Filter from '@/public/static/filter/filter.json'
 
 export const newFilter = {
-    "type": Filter.type.options,
-    "effort": Filter.effort.options,
-    "skillsets": Filter["skill-sets"],
-    "labels": Filter.labels.options,
-    "category": Filter.category.options,
-    "execution-status": Filter.contributions["execution-status"]
+  type: Filter.type.options,
+  effort: Filter.effort.options,
+  skillsets: Filter['skill-sets'],
+  labels: Filter.labels.options,
+  category: Filter.category.options,
+  'execution-status': Filter.contributions['execution-status'],
 }
 
-export let categoryKeyAndValue: {[key: string]: string} = {}
+export let categoryKeyAndValue: { [key: string]: string } = {}
 const categories = Filter.category.options
 for (let i = 0; i < categories.length; i++) {
-    categoryKeyAndValue[categories[i].id] = categories[i].name;
+  categoryKeyAndValue[categories[i].id] = categories[i].name
 }
 
 // "category": {

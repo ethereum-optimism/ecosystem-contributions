@@ -12,6 +12,17 @@ import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 export function handleStatus(status: string) {
   switch (status) {
+    case '':
+      return (
+        <>
+          <StatusNotStart />
+          <div className="flex gap-1 items-center">
+            <h6 className="text-xs font-medium text-gray-900 line-clamp-1">
+              Not Started
+            </h6>
+          </div>
+        </>
+      )
     case 'Not Started':
       return (
         <>
@@ -102,9 +113,10 @@ export default function GridCard({
       <div className="flex justify-between items-center">
         <div
           data-tooltip-id={data.contributions['execution-status']}
-          className="flex gap-1 items-center py-0.5 px-1 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50"
+          className="flex gap-1 items-center py-1 px-2 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50"
         >
           {handleStatus(data.contributions['execution-status'])}
+
           <ReactTooltip
             opacity={100}
             id={data.contributions['execution-status']}

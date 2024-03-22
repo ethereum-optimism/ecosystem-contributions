@@ -228,11 +228,17 @@ export default function ProjectTab({
               className={`w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 h-fit`}
             >
               {currentItems.length !== 0 ? (
-                currentItems.map((item, i) => (
-                  <div className="" key={i}>
-                    <GridCard data={item} />
-                  </div>
-                ))
+                currentItems.map((item, i) => {
+                  console.log(item)
+                  if (item['contributions']['execution-status'] == '') {
+                    item['contributions']['execution-status'] = 'Not Started'
+                  }
+                  return (
+                    <div className="" key={i}>
+                      <GridCard data={item} />
+                    </div>
+                  )
+                })
               ) : (
                 <h6 className="col-span-1 lg:col-span-2 xl:col-span-3 text-xl font-medium text-gray-500 text-center w-full">
                   0 Items Found
