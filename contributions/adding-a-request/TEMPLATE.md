@@ -3,21 +3,28 @@ title: ""
 description: ""
 lang: "en-US"
 type: ""
-authors: [""]
+authors: ["@handle (platform) @ Org"]
 category: ""
 effort: ""
 skill-sets: [""]
 labels: [""]
-contributions: [
-    {
+contributions: 
         contributors: [""]
         discussion-link: ""
         links: [""]
         execution-status: ""
-    }
-]
 ---
 
 # Title
 
-Description of the request/idea/contribution. 
+## Summary
+
+
+
+## Possible Features 
+
+-
+
+## Why this is cool 
+
+OPTIONAL
