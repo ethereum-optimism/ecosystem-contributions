@@ -12,17 +12,6 @@ import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 export function handleStatus(status: string) {
   switch (status) {
-    case '':
-      return (
-        <>
-          <StatusNotStart />
-          <div className="flex gap-1 items-center">
-            <h6 className="text-xs font-medium text-gray-900 line-clamp-1">
-              Not Started
-            </h6>
-          </div>
-        </>
-      )
     case 'Not Started':
       return (
         <>
