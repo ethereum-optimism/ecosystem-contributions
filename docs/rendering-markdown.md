@@ -6,7 +6,7 @@ There are 3 important directory path that are important to render the markdown p
 3. **Overview Section*** rendered from `README.md` of the repository.
 
 ### Adding New Ideas
-By putting new markdown into `/contributions` folder, each markdown will be rendered under project section on the site. The name of the file will be use as the route name for that particular page.
+By putting new markdown into `/contributions` folder, each markdown will be rendered under project section on the site. The name of the file will be use as the route name for that particular page. Note that adding ideas is currently not open to the public. See [adding a request](./add-a-request.md) for more info. 
 
 ### Changing Ideas Structure
 The most of the structure of each project can be dynamically change, such as adding/removing labels, change description. The content in `filter.json` will be use as a dynamic options for filtering all the ideas.
