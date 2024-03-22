@@ -1,4 +1,4 @@
-import HomeIcon from '@/public/icon/Home'
+import HomeIcon from '@/public/icon/HomeIcon'
 
 export default function BreadCrump({}: {}) {
   return (
