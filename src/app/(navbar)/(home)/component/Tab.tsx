@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { CheckBoxStateType, TabStateType } from './Home'
+import config from '@/public/static/homepage/config.json' assert { type: 'json' }
 export default function TabPage({
   state,
   setState,
@@ -13,17 +14,7 @@ export default function TabPage({
     setState((prev) => ({ ...prev, index: index }))
   }
 
-  const tab = [
-    {
-      text: 'Overview',
-      index: 0,
-    },
-    {
-      text: 'Project',
-      index: 1,
-    },
-  ]
-
+  const tab = config['tab']
   return (
     <div className=" mt-[2rem] flex flex-col gap-4 ">
       <div className="flex justify-between gap-4 border-b">
