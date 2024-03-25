@@ -145,7 +145,8 @@
       "Protocol",
       "DeSocial",
       "Wallets",
-      "Accessibility/Transparency"
+      "Accessibility/Transparency",
+      "Bridge"
     ],
     "validation": {
       "char-limit": 50,
