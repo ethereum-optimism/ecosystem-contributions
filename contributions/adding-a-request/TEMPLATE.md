@@ -8,11 +8,11 @@ category: ""
 effort: ""
 skill-sets: [""]
 labels: [""]
-contributions: 
-        contributors: [""]
-        discussion-link: ""
-        links: [""]
-        execution-status: ""
+contributions:
+  contributors: [""]
+  discussion-link: ""
+  links: [""]
+  execution-status: "not-started"
 ---
 
 # Title
@@ -21,10 +21,10 @@ contributions:
 
 
 
-## Possible Features 
+## Possible Features
 
 -
 
-## Why this is cool 
+## Why this is cool
 
 OPTIONAL
