@@ -12,7 +12,7 @@ contributions:
         contributors: [""]
         discussion-link: ""
         links: [""]
-        execution-status: ""
+        execution-status: "not-started"
 ---
 
 # Liquidity Types Explainer

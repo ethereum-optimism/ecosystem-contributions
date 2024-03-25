@@ -12,7 +12,7 @@ contributions:
         contributors: [""]
         discussion-link: ""
         links: [""]
-        execution-status: ""
+        execution-status: "not-started"
 ---
 
 # OP Mainnet Resource Usage Tracker

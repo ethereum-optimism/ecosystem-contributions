@@ -118,7 +118,7 @@ export default function GridCard({
             className="text-sm font-light"
             content={
               newFilter['execution-status'].find(
-                (elem) => elem.name === data.contributions['execution-status']
+                (elem) => elem.id === data.contributions['execution-status']
               )?.description
             }
           />

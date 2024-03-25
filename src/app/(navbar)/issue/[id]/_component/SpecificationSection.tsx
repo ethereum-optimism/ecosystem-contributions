@@ -7,6 +7,8 @@ export default function SpecificationSection({
   content: MarkDownData
   specificationRef: React.MutableRefObject<HTMLElement | null>
 }) {
+  // const {title, ...rest} = MarkDownData
+  const newContent = content.contentHtml.replace(/<h1>.*?<\/h1>/gs, '')
   return (
     <section
       id="Specification"
@@ -15,11 +17,13 @@ export default function SpecificationSection({
       // @ts-ignore
       ref={specificationRef}
     >
-      {/* <h6 className="text-2xl text-gray-900 font-bold my-4">Specification</h6> */}
-      {/* <hr className="hidden lg:block my-6" /> */}
+      <h6 className="text-3xl text-gray-900 font-bold my-4 mb-6">
+        Specification
+      </h6>
+      <hr className="hidden lg:block mb-4" />
       <div
         className="render break-words text-gray-500 list-none"
-        dangerouslySetInnerHTML={{ __html: content.contentHtml }}
+        dangerouslySetInnerHTML={{ __html: newContent }}
       />
     </section>
   )

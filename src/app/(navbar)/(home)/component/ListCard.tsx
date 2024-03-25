@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { handleStatus } from './GridCard'
 import { newFilter } from '../Text'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
-
+import { categoryKeyAndValue } from '../Text'
 export default function ListCard({
   currentItems,
 }: {
@@ -37,7 +37,7 @@ export default function ListCard({
                     <th className="p-5 flex flex-col">
                       <div
                         data-tooltip-id={item.contributions['execution-status']}
-                        className="flex gap-1 items-center py-0.5 px-1 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50 w-fit mb-2"
+                        className="flex gap-1 items-center py-1 px-2 pr-2 mb-2.5 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50 w-fit"
                       >
                         {handleStatus(item.contributions['execution-status'])}
                         <ReactTooltip
@@ -75,7 +75,9 @@ export default function ListCard({
                       <div className="flex flex-wrap gap-2">
                         <div className="px-2 py-1 rounded-full bg-secondaryRed grow-0 text-primaryRed cursor-pointer w-fit">
                           <p className="text-xs font-normal break-all line-clamp-1">
-                            {item.category}
+                            {categoryKeyAndValue[item.category]
+                              ? categoryKeyAndValue[item.category]
+                              : item.category.replace('-', '')}
                           </p>
                         </div>
                         <div className="inline-flex px-2 py-1 rounded-full bg-slate-100 hover:bg-slate-200/75 cursor-pointer w-fit">
