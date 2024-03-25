@@ -15,8 +15,8 @@ export default function SpecificationSection({
       // @ts-ignore
       ref={specificationRef}
     >
-      <h6 className="text-2xl text-gray-900 font-bold my-4">Specification</h6>
-      <hr className="hidden lg:block my-6  border-t border-gray-300" />
+      {/* <h6 className="text-2xl text-gray-900 font-bold my-4">Specification</h6> */}
+      {/* <hr className="hidden lg:block my-6" /> */}
       <div
         className="render break-words text-gray-500 list-none"
         dangerouslySetInnerHTML={{ __html: content.contentHtml }}

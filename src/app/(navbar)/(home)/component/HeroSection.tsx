@@ -18,7 +18,7 @@ export default function HeroSection() {
         <h6 className="text-slate-900 text-5xl font-semibold font-rubik ">
           Welcome to The Builder List
         </h6>
-        <p className="text-slate-600 text-sm font-normal mx-8 md:mx-0 my-6 ">
+        <p className="text-slate-600 text-base font-normal mx-8 md:mx-0 my-6 max-w-[45em]">
           Join the Optimism Collective: Shape the Future, Discover
           Opportunities, Get Involved, and Make an Impact Today. The Optimism
           Collective ecosystem has various pathways for you to be potentially
