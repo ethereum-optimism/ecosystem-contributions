@@ -11,7 +11,7 @@ export default function SpecificationSection({
     <section
       id="Specification"
       //  min-h-[60vh]
-      className=" bg-white  p-5 sm:p-6 md:p-10 lg:rounded-md lg:shadow-md items-center w-auto  lg:mb-6"
+      className="border-0 bg-white  p-5 sm:p-6 md:p-10 lg:rounded-md lg:border items-center w-auto  lg:mb-6"
       // @ts-ignore
       ref={specificationRef}
     >

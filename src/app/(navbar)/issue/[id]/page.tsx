@@ -1,4 +1,3 @@
-
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -24,8 +23,7 @@ async function getResources(file: string): Promise<MarkDownData | string> {
 async function getMarkDownData(id: string): Promise<MarkDownData | string> {
   const encodedFileName = encodeURIComponent(id)
   const fullPath =
-    path.join(process.cwd(), 'contributions', encodedFileName) +
-    '.md'
+    path.join(process.cwd(), 'contributions', encodedFileName) + '.md'
 
   try {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -52,7 +50,6 @@ async function getMarkDownData(id: string): Promise<MarkDownData | string> {
   }
 }
 
-
 export const metadata: Metadata = {
   title: 'Issue',
   description: 'Explore ideas for your next project.',
@@ -73,7 +70,7 @@ export default async function page({ params }: { params: { id: string } }) {
 
   return (
     <>
-    <div className=" bg-gray-50">
+      <div className=" bg-gray-50">
         <div className="lg:px-[4rem] xl:px-[10rem] lg:py-8">
           <BreadCrump content={content} />
         </div>
