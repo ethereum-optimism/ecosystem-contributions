@@ -8,7 +8,7 @@ import BreadCrump from './_component/BreadCrump'
 import Cpage from './Cpage'
 import Custom500 from '../../../custom-error'
 import Footer from '@/src/app/component/footer/Footer'
-import { Metadata } from 'next'
+import { Metadata, ResolvingMetadata } from 'next'
 
 async function getResources(file: string): Promise<MarkDownData | string> {
   try {
@@ -50,9 +50,30 @@ async function getMarkDownData(id: string): Promise<MarkDownData | string> {
   }
 }
 
-export const metadata: Metadata = {
-  title: 'Issue',
-  description: 'Explore ideas for your next project.',
+// export const metadata: Metadata = {
+//   title: 'Project Ideas! - Optimism',
+//   description: 'Explore ideas for your next project.',
+// }
+type Props = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const id = params.id
+  // convert id to title
+  const title = id
+    .split('-') // split on hyphens
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // capitalize first letter of each word
+    .join(' ') // join words with spaces
+
+  return {
+    title: title + ' | Optimism',
+    description: 'Explore ideas for your next project.',
+  }
 }
 
 export default async function page({ params }: { params: { id: string } }) {

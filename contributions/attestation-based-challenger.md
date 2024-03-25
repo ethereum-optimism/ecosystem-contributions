@@ -1,18 +1,23 @@
 ---
-title: "Attestation-Based Challenger"
-description: "Originally, Optimism considered introducing an attestation-based challenger module as a pathway towards decentralization. Though focus has shifted towards fault proofs, the attestation-based module remains a fascinating and worthwhile concept. Instead of a multisig, this module would utilize a smart contract that verifies EIP-712 signatures. "
-lang: "en-US"
-type: "Project Idea"
-authors: ["@smartcontracts (GitHub) @ OP Labs"]
-category: "protocol-infra"
-effort: "Large"
-skill-sets: ["Protocol Development", "Full Stack Development", "Smart Contract Development"]
-labels: ["Attestations", "Chain Infrastructure", "Smart Contracts", "Protocol"]
-contributions: 
-        contributors: [""]
-        discussion-link: ""
-        links: [""]
-        execution-status: ""
+title: 'Attestation-Based Challenger'
+description: 'Originally, Optimism considered introducing an attestation-based challenger module as a pathway towards decentralization. Though focus has shifted towards fault proofs, the attestation-based module remains a fascinating and worthwhile concept. Instead of a multisig, this module would utilize a smart contract that verifies EIP-712 signatures. '
+lang: 'en-US'
+type: 'Project Idea'
+authors: ['@smartcontracts (GitHub) @ OP Labs']
+category: 'protocol-infra'
+effort: 'Large'
+skill-sets:
+  [
+    'Protocol Development',
+    'Full Stack Development',
+    'Smart Contract Development',
+  ]
+labels: ['Attestations', 'Chain Infrastructure', 'Smart Contracts', 'Protocol']
+contributions:
+  contributors: ['']
+  discussion-link: ''
+  links: ['']
+  execution-status: ''
 ---
 
 # Attestation-Based Challenger

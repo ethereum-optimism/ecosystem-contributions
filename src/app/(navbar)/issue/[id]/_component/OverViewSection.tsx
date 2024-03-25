@@ -20,16 +20,16 @@ export default function OverViewSection({
       id="Overview"
       className="border-0 bg-white p-5 sm:p-6 md:p-10 lg:rounded-md lg:border items-center w-auto  lg:mb-6"
     >
-      <Link href="/#project" className="flex gap-2 items-center ">
+      {/* <Link href="/#project" className="flex gap-2 items-center ">
         <Home width="16" height="16" />
         <h6 className="text-sm font-medium text-gray-700 hover:underline">
           Home
         </h6>
-      </Link>
+      </Link> */}
 
       <div
         data-tooltip-id={content.contributions['execution-status']}
-        className="flex gap-1 items-center py-0.5 px-1 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50 w-fit"
+        className="flex gap-1 items-center py-1 px-2 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50 w-fit"
       >
         {handleStatus(content.contributions['execution-status'])}
         <ReactTooltip

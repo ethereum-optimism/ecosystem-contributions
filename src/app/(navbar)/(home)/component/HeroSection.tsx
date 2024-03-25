@@ -7,10 +7,10 @@ export default function HeroSection() {
       {/* lg:max-w-[30rem] xl:max-w-[36rem] */}
       <div className="flex justify-center grid-cols-1 animate-slidedown duration-1000 w-full md:hidden">
         <Image
-          src="img/sunny.svg"
-          alt="retro hero icon"
-          width={200}
-          height={200}
+          src="img/home_sunny.svg"
+          alt="welcome_svg"
+          width={300}
+          height={300}
           className="animate-none"
         />
       </div>
@@ -30,10 +30,10 @@ export default function HeroSection() {
       </div>
       <div className="hidden md:col-span-3  md:flex md:flex-row md:justify-center animate-slideright duration-1000">
         <Image
-          src="img/sunny.svg"
+          src="img/home_sunny.svg"
           alt="retro hero icon"
-          width={250}
-          height={250}
+          width={400}
+          height={400}
           className="animate-none"
         />
       </div>
