@@ -1,46 +1,47 @@
-import fs from "fs/promises";
-import path from 'path';
-import matter from 'gray-matter';
-
+import fs from 'fs/promises'
+import path from 'path'
+import matter from 'gray-matter'
 
 export async function getResources() {
-    const directoryPath = path.join(process.cwd(), 'contributions');
-    const fileNames = await fs.readdir(directoryPath);
+  const directoryPath = path.join(process.cwd(), 'contributions')
+  const fileNames = await fs.readdir(directoryPath)
 
-    let postDataPromises = [];
+  let postDataPromises = []
 
-    for (let i = 0; i < fileNames.length; i++) {
-      if(path.extname(fileNames[i]).toLowerCase() === ".md") {
-        postDataPromises.push(getMarkDownData(fileNames[i]))
-      }
+  for (let i = 0; i < fileNames.length; i++) {
+    if (path.extname(fileNames[i]).toLowerCase() === '.md') {
+      postDataPromises.push(getMarkDownData(fileNames[i]))
     }
-      
-    const postData = await Promise.all(postDataPromises);
+  }
 
-    const jsonData = JSON.stringify(postData, null, 2);
+  const postData = await Promise.all(postDataPromises)
 
-    const outputPath = path.join(process.cwd(), './public/static/json/output.json');
-    
-    await fs.writeFile(outputPath, jsonData);
+  const jsonData = JSON.stringify(postData, null, 2)
 
-    // return outputPath;
+  const outputPath = path.join(
+    process.cwd(),
+    './public/static/json/output.json'
+  )
+
+  await fs.writeFile(outputPath, jsonData)
+
+  // return outputPath;
 }
 
 // Promise<MarkDownData>
 async function getMarkDownData(id) {
-  
-    const fullPath = path.join(process.cwd(), 'contributions', id); 
-    const fileContents = await fs.readFile(fullPath, 'utf8'); 
-  
-    const matterResult = matter(fileContents);
-  
-    //@ts-ignore
-    return {
-      id: id.split(".md")[0], 
-      ...matterResult.data,
-    };
+  const fullPath = path.join(process.cwd(), 'contributions', id)
+  const fileContents = await fs.readFile(fullPath, 'utf8')
+
+  const matterResult = matter(fileContents)
+
+  //@ts-ignore
+  return {
+    id: id.split('.md')[0],
+    ...matterResult.data,
+  }
 }
 
-console.info(`Processing markdown files...`);
-await getResources();
-console.info(`Markdown Done ✅`);
+console.info(`Processing markdown files...`)
+await getResources()
+console.info(`Markdown Done ✅`)

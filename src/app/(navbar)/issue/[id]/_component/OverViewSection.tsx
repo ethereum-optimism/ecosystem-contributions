@@ -18,21 +18,18 @@ export default function OverViewSection({
     <section
       ref={overViewRef}
       id="Overview"
-      className=" bg-white p-5 sm:p-6 md:p-10 lg:rounded-md lg:shadow-md items-center w-auto  lg:mb-6"
+      className="border-0 bg-white p-5 sm:p-6 md:p-10 lg:rounded-md lg:border items-center w-auto  lg:mb-6"
     >
-
-
-      <Link href="/#project" className="flex gap-2 items-center ">
-          <Home
-          width="16"
-          height="16"
-          />
-          <h6 className="text-sm font-medium text-gray-700 hover:underline">Home</h6>
-      </Link>
+      {/* <Link href="/#project" className="flex gap-2 items-center ">
+        <Home width="16" height="16" />
+        <h6 className="text-sm font-medium text-gray-700 hover:underline">
+          Home
+        </h6>
+      </Link> */}
 
       <div
         data-tooltip-id={content.contributions['execution-status']}
-        className="flex gap-1 items-center py-0.5 px-1 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50 w-fit"
+        className="flex gap-1 items-center py-1 px-2 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50 w-fit"
       >
         {handleStatus(content.contributions['execution-status'])}
         <ReactTooltip
@@ -80,9 +77,9 @@ export default function OverViewSection({
 
         <div className="flex gap-3 items-center flex-wrap">
           <p className="text-base font-normal text-gray-400">Skillsets:</p>
-          {content["skill-sets"].map((item, i) => (
+          {content['skill-sets'].map((item, i) => (
             <h6 className="text-base font-medium text-gray-600 " key={i}>
-              {i !== content["skill-sets"].length - 1 ? item + ',' : item}
+              {i !== content['skill-sets'].length - 1 ? item + ',' : item}
             </h6>
           ))}
         </div>
@@ -103,20 +100,24 @@ export default function OverViewSection({
         <div className="flex gap-3 items-center flex-wrap">
           <p className="text-base font-normal text-gray-400">Contributors:</p>
           <div className="flex flex-wrap gap-1">
-            {content.contributions.contributors.map((item, i) => (
-              <h6 className="text-base font-medium text-gray-600" key={i}>
-                {i !== content.contributions.contributors.length - 1
-                  ? item + ','
-                  : item}
-              </h6>
-            ))}
+            {content.contributions.contributors.length === 1 ? (
+              <h6 className="text-base font-medium text-gray-600">-</h6>
+            ) : (
+              content.contributions.contributors.map((item, i) => (
+                <h6 className="text-base font-medium text-gray-600" key={i}>
+                  {i !== content.contributions.contributors.length - 1
+                    ? item + ','
+                    : item}
+                </h6>
+              ))
+            )}
           </div>
         </div>
 
         <div className="flex gap-3 items-center flex-wrap">
           <p className="text-base font-normal text-gray-400">Execution:</p>
           <h6 className="text-base font-medium text-gray-600">
-            {content.contributions['execution-status']}
+            {content.contributions['execution-status'] || '-'}
           </h6>
         </div>
 
@@ -135,27 +136,23 @@ export default function OverViewSection({
           Reference Links:
         </p>
         <div className="flex flex-col gap-y-1">
-          {content.contributions.links.map((item, i) => (
-            <a
-              key={i}
-              href={item}
-              className={`
-                    flex shrink-0 gap-1 lg:gap-2 w-full items-center rounded-md hover:underline cursor-pointer`}
-            >
-              <div className="min-w-4">
-                <NavigateIcon />
-              </div>
-              <h6 className="text-gray-500 text-sm font-normal line-clamp-1">
-                {item}
+          {content.contributions.links.length === 1 ? (
+            <h6 className="text-base font-medium text-gray-600">-</h6>
+          ) : (
+            content.contributions.links.map((item, i) => (
+              <h6 className="text-base font-medium text-gray-600" key={i}>
+                {i !== content.contributions.links.length - 1
+                  ? item + ','
+                  : item}
               </h6>
-            </a>
-          ))}
+            ))
+          )}
         </div>
         <a
-          className="w-fit mt-4 border px-8 py-3 bg-[#ff0420] text-white rounded-3xl hover:opacity-90 transition ease-linear duration-300 shadow-md"
+          className="w-fit mt-4 border px-8 py-3 bg-[#ff0420] text-white rounded-3xl hover:bg-white hover:text-[#ff0420] hover:border-[#ff0420] transition ease-linear duration-300 shadow-md"
           href={content.contributions['discussion-link']}
         >
-          <h6 className="text-center font-semibold">Discussion &rarr;</h6>
+          <h6 className="text-center font-semibold">Join Discussion -&gt;</h6>
         </a>
       </div>
     </section>

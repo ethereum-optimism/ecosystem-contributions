@@ -12,22 +12,24 @@ export function CheckBoxType({
 }) {
   return (
     <>
-      {newFilter['type'].map((item, i) => (
-        <Checkbox
-          key={i}
-          sizeCheckbox="min-w-[20px] min-h-[20px]"
-          label={item}
-          value={item}
-          className="cursor-pointer"
-          checked={checkBox['Type'].includes(item)}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            handleChangeCheckBox(
-              'Type' as keyof CheckBoxStateType,
-              e.target.value
-            )
-          }
-        />
-      ))}
+      {newFilter['type'].map((item, i) => {
+        return (
+          <Checkbox
+            key={i}
+            sizeCheckbox="min-w-[20px] min-h-[20px]"
+            label={item}
+            value={item}
+            className="cursor-pointer"
+            checked={checkBox['Type'].includes(item)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              handleChangeCheckBox(
+                'Type' as keyof CheckBoxStateType,
+                e.target.value
+              )
+            }
+          />
+        )
+      })}
     </>
   )
 }
@@ -69,21 +71,24 @@ export function CheckBoxExecutionStatus({
 }) {
   return (
     <>
-      {newFilter['execution-status'].map((item, i) => (
-        <Checkbox
-          key={i}
-          label={item.name}
-          value={item.id}
-          className="cursor-pointer"
-          checked={checkBox['ExecutionStatus'].includes(item.id)}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            handleChangeCheckBox(
-              'ExecutionStatus' as keyof CheckBoxStateType,
-              e.target.value
-            )
-          }
-        />
-      ))}
+      {newFilter['execution-status'].map((item, i) => {
+        return (
+          <Checkbox
+            key={i}
+            label={item.name}
+            value={item.id}
+            className="cursor-pointer"
+            checked={checkBox['ExecutionStatus'].includes(item.id)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+              // console.log(item)
+              handleChangeCheckBox(
+                'ExecutionStatus' as keyof CheckBoxStateType,
+                e.target.value
+              )
+            }}
+          />
+        )
+      })}
     </>
   )
 }

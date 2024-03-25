@@ -40,8 +40,7 @@ async function getJsonData(): Promise<Omit<MarkDownData, 'contentHtml'>[]> {
 
 async function getOverViewData(id: string): Promise<LoadMarkDownType | string> {
   const encodedFileName = encodeURIComponent(id)
-  const fullPath =
-    path.join(process.cwd(), 'README.md')
+  const fullPath = path.join(process.cwd(), 'README.md')
   try {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const matterResult = matter(fileContents)
@@ -63,10 +62,9 @@ async function getOverViewData(id: string): Promise<LoadMarkDownType | string> {
 }
 
 export const metadata: Metadata = {
-  title: 'Builder List',
+  title: 'Builder List | Optimism',
   description: 'Explore ideas for your next project.',
 }
-
 
 export default async function Home() {
   const { jsonData, overViewData } = await getResources()
@@ -82,7 +80,6 @@ export default async function Home() {
 
   return (
     <>
-
       <div className="min-h-screen">
         <div className="px-4  md:px-[4rem] lg:px-[8rem] py-[2.5rem] bg-gradient-to-b  from-[#ffe6e6] text-gray-300 to-white">
           <div className="pt-20 md:pt-14 md:my-8">
