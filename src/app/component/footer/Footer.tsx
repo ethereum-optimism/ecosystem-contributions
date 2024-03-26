@@ -17,7 +17,7 @@ const Footer = ({ color = 'bg-white' }: FooterProps) => {
           <GitHubIcon></GitHubIcon>
         </a>
         <a
-          href="https://twitter.com/catalyzt_tech"
+          href="https://twitter.com/Optimism"
           target="_blank"
           rel="noopener noreferrer"
         >
