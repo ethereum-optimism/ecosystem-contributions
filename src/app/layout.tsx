@@ -27,6 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+
       <body className={`${interFont.variable} ${rubikFont.variable} `}>
         <RouteChangeListener/>
         <div className="font-inter  ">
