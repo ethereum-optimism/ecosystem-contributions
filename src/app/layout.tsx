@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter, Rubik } from 'next/font/google'
 import { RouteChangeListener } from './component/routeListener';
+import Head from 'next/head';
 
 const interFont = Inter({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body className={`${interFont.variable} ${rubikFont.variable} `}>
         <RouteChangeListener/>
         <div className="font-inter  ">

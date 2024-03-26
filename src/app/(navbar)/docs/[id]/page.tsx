@@ -4,7 +4,6 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 import { MarkDownData } from '../../(home)/component/Home'
-import BreadCrump from './_component/BreadCrump'
 import Cpage from './Cpage'
 import Custom500 from '../../../custom-error'
 import Footer from '@/src/app/component/footer/Footer'
@@ -21,9 +20,9 @@ async function getResources(file: string): Promise<MarkDownData | string> {
 }
 
 async function getMarkDownData(id: string): Promise<MarkDownData | string> {
-  const encodedFileName = encodeURIComponent(id)
+  const encodedFileName = encodeURIComponent(id).replace(".md", "")
   const fullPath =
-    path.join(process.cwd(), 'contributions', encodedFileName) + '.md'
+    path.join(process.cwd(), 'docs', encodedFileName) + '.md'
 
   try {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -102,9 +101,6 @@ export default async function page({ params }: { params: { id: string } }) {
   return (
     <>
       <div className=" bg-gray-50">
-        <div className="lg:px-[4rem] xl:px-[10rem] lg:py-8">
-          <BreadCrump content={content} />
-        </div>
         <div className="lg:px-[4rem] lg:pb-[1rem] xl:px-[10rem] xl:pb-[1.5rem] flex justify-center">
           <Cpage content={content} />
         </div>

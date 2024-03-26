@@ -62,8 +62,20 @@ async function getOverViewData(id: string): Promise<LoadMarkDownType | string> {
 }
 
 export const metadata: Metadata = {
-  title: 'Builder List | Optimism',
+  title: 'Builder Ideas | Optimism',
   description: 'Explore ideas for your next project.',
+  openGraph: {
+    type: 'website',
+    url: 'https://contribute.optimism.io',
+    title: 'Builder Ideas | Optimism',
+    description: 'Explore ideas for your next project.',
+    siteName: 'optimism.io',
+    images: [
+      {
+        url: 'https://contribute.optimism.io/cover.jpeg',
+      },
+    ],
+  },
 }
 
 export default async function Home() {
