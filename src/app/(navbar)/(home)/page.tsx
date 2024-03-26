@@ -66,12 +66,12 @@ export const metadata: Metadata = {
   description: 'Explore ideas for your next project.',
   openGraph: {
     type: "website",
-    url: "https://polite-valkyrie-cc9f67.netlify.app",
+    url: process.env.PRODUCTION_URL,
     title: "Builder List | Optimism",
     description: "Explore ideas for your next project.",
     siteName: "optimism.io",
     images: [{
-      url: "https://polite-valkyrie-cc9f67.netlify.app/cover.jpeg",
+      url: process.env.PRODUCTION_URL + "/cover.jpeg",
     }],
   }
 }

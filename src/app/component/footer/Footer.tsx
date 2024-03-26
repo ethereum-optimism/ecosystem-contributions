@@ -19,7 +19,7 @@ const Footer = ({ color = 'bg-white' }: FooterProps) => {
           <span>By</span>
 
           <a
-            href="https://github.com/catalyzt-team"
+            href="https://twitter.com/catalyzt_tech"
             className="text-[#865CBB] hover:underline flex gap-1 items-center"
             target="_blank"
             rel="noopener noreferrer"
