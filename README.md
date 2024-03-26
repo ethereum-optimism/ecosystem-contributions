@@ -14,7 +14,7 @@ Retroactive Public Goods Funding (Retro Funding) is how you get rewarded for you
 
 Retro Funding is guided by a simple framework - we believe it's easier to assess what has been useful in the past, than what might be useful in the future. Currently, the Collective runs Retro Funding rounds a couple times a year where projects that create the most impact are eligible for rewards. For more info see the [Retro Funding blog post](https://optimism.mirror.xyz/nz5II2tucf3k8tJ76O6HWwvidLB6TLQXszmMnlnhxWU)!
 
-![image](./public/img/retro-flywheel.png)
+<!---![image](./public/img/retro-flywheel.png) -->
 
 Together, Impact = Profit & Retro Funding create a flywheel where impact in the Collective is rewarded sustainably! 
 
