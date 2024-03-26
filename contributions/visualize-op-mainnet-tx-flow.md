@@ -1,5 +1,5 @@
 ---
-title: "Visalize OP Mainnet Transaction Flow"
+title: "Visualize OP Mainnet Transaction Flow"
 description: "This visualizer, ideally presented as an interactive website, would provide real-time insights into transaction flows, giving users a new way to engage with OP Mainnet."
 lang: "en-US"
 type: "Draft Project Idea"
@@ -15,7 +15,7 @@ contributions:
         execution-status: "not-started"
 ---
 
-# Visalize OP Mainnet Transaction Flow
+# Visualize OP Mainnet Transaction Flow
 
 ## Summary
 
