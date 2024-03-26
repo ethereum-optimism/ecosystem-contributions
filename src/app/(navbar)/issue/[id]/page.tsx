@@ -75,12 +75,12 @@ export async function generateMetadata(
     description: 'Explore ideas for your next project.',
     openGraph: {
       type: "website",
-      url: process.env.PRODUCTION_URL,
+      url: "https://polite-valkyrie-cc9f67.netlify.app",
       title: title + ' | Optimism',
       description: "Explore ideas for your next project.",
       siteName: "optimism.io",
       images: [{
-        url: process.env.PRODUCTION_URL + "/cover.jpeg",
+        url: "https://polite-valkyrie-cc9f67.netlify.app/cover.jpeg",
       }],
     }
   }
