@@ -219,6 +219,7 @@ export default function OverViewSection({
                 ? content.contributions['discussion-link']
                 : 'https://discord.com/invite/optimism/'
             }
+            target="_blank"
           >
             <button className="flex flex-row justify-center font-semibold">
               <div className="mr-2">Join Discussion</div>
@@ -238,11 +239,12 @@ export default function OverViewSection({
 
           <Link
             className="w-fit border px-8 py-3 bg-black text-white rounded-3xl hover:invert transition ease-linear duration-300 shadow-md"
-            // href={`https://github.com/ethereum-optimism/ecosystem-contributions/blob/main/contributions/${content.id}.md`}
-            href={{
-              pathname: '/docs/claim-an-idea.md',
-              query: { id: content.id },
-            }}
+            href={`https://github.com/ethereum-optimism/ecosystem-contributions/blob/main/docs/claim-an-idea.md`}
+            target="_blank"
+            // href={{
+            //   pathname: '/docs/claim-an-idea.md',
+            //   query: { id: content.id },
+            // }}
           >
             <button className="flex flex-row justify-center font-semibold">
               <div className="mr-2">Claim Idea</div>
