@@ -29,8 +29,8 @@ export default function HeroSection() {
         <Image
           src="img/home_sunny.svg"
           alt="retro hero icon"
-          width={400}
-          height={400}
+          width={450}
+          height={450}
           className="animate-none"
         />
       </div>

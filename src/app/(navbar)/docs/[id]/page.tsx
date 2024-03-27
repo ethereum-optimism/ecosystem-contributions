@@ -20,9 +20,8 @@ async function getResources(file: string): Promise<MarkDownData | string> {
 }
 
 async function getMarkDownData(id: string): Promise<MarkDownData | string> {
-  const encodedFileName = encodeURIComponent(id).replace(".md", "")
-  const fullPath =
-    path.join(process.cwd(), 'docs', encodedFileName) + '.md'
+  const encodedFileName = encodeURIComponent(id).replace('.md', '')
+  const fullPath = path.join(process.cwd(), 'docs', encodedFileName) + '.md'
 
   try {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -73,15 +72,17 @@ export async function generateMetadata(
     title: title + ' | Optimism',
     description: 'Explore ideas for your next project.',
     openGraph: {
-      type: "website",
-      url: "https://contribute.optimism.io",
+      type: 'website',
+      url: 'https://contribute.optimism.io',
       title: title + ' | Optimism',
-      description: "Explore ideas for your next project.",
-      siteName: "optimism.io",
-      images: [{
-        url: "https://contribute.optimism.io/cover.jpeg",
-      }],
-    }
+      description: 'Explore ideas for your next project.',
+      siteName: 'optimism.io',
+      images: [
+        {
+          url: 'https://contribute.optimism.io/cover.jpeg',
+        },
+      ],
+    },
   }
 }
 

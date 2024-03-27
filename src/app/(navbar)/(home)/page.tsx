@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   description: 'Explore ideas for your next project.',
   openGraph: {
     type: 'website',
-    url: 'https://contribute.optimism.io',
+    url: 'https://contribute.optimism.io/',
     title: 'Builder Ideas | Optimism',
     description: 'Explore ideas for your next project.',
     siteName: 'optimism.io',
