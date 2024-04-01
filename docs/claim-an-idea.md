@@ -2,7 +2,7 @@
 
 To claim an idea you will need to complete the following tasks:
 
-* [ ] Create a PR. Copy pates this todo list into the description.
+* [ ] Create a PR. Copy paste this todo list into the description.
 * [ ] Create a discussion thread:
     * Inside this repo in [Discussions](https://github.com/ethereum-optimism/ecosystem-contributions/discussions/categories/builds)
     * In the [Optimism Discord](https://discord.gg/optimism) > Builder District > [Builder Ideas](https://discord.gg/vejYbHWU). 
