@@ -3,7 +3,7 @@ title: "Attestation Data Duplicator"
 description: "One of the primary challenges currently facing the AttestationStation is the need to bootstrap the system with high-quality attestations. Luckily, blockchains already have an enormous amount of useful data that can be converted into attestations."
 lang: "en-US"
 type: "Project Idea"
-authors: ["@aagbotemi (GitHub) @ Duplikaat Team","@goodness5 (GitHub) @ Duplikaat Team","@okolievans (GitHub) @ Duplikaat Team","@olorunfemibabs (GitHub) @ Duplikaat Team", "@dadsec-dev (GitHub) @ Duplikaat Team"]
+authors: ["@smartcontracts (GitHub) @ OP Labs"]
 category: "dev-tooling"
 effort: "Large"
 skill-sets: ["Front End Development", "Back End Development", "Full Stack Development", "Smart Contract Development"]
