@@ -74,15 +74,17 @@ export async function generateMetadata(
     title: title + ' | Optimism',
     description: 'Explore ideas for your next project.',
     openGraph: {
-      type: "website",
-      url: "https://contribute.optimism.io",
+      type: 'website',
+      url: 'https://contribute.optimism.io',
       title: title + ' | Optimism',
-      description: "Explore ideas for your next project.",
-      siteName: "optimism.io",
-      images: [{
-        url: "https://contribute.optimism.io/cover.jpeg",
-      }],
-    }
+      description: 'Explore ideas for your next project.',
+      siteName: 'optimism.io',
+      images: [
+        {
+          url: 'https://contribute.optimism.io/cover.jpeg',
+        },
+      ],
+    },
   }
 }
 
