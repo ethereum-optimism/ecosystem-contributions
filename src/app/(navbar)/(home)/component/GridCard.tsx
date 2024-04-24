@@ -40,7 +40,7 @@ export function handleStatus(status: string) {
           <StatusInProgressOpen />
           <div className="flex gap-1 items-center">
             <h6 className="text-xs font-medium text-gray-900 line-clamp-1">
-              In Progress Open
+              In Progress - Open
             </h6>
           </div>
         </>
