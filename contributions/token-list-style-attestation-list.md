@@ -3,15 +3,15 @@ title: "TokensList.org-Style Attestation List"
 description: "The TokensList allows users to publish and discover lists of tokens maintained by teams and projects. These lists of tokens make it possible for teams to signal the legitimacy of certain tokens and help users filter out spam. We need this same kind of infra for the Attestation Station. "
 lang: "en-US"
 type: "Draft Project Idea"
-authors: ["@smartcontracts (GitHub) @ OP Labs"]
+authors: [@0xelpeze (Twitter) @ GoPlusSecurity" ,  "@theyavuzaslan (Twitter) @ GoPlusSecurity" ]
 category: "dev-tooling"
 effort: "Large"
 skill-sets: ["Front End Development", "Back End Development", "Full Stack Development", "Smart Contract Development"]
 labels: [ "Attestations", "Developer Tooling", "Chain Infrastructure", "Accessibility/Transparency"]
 contributions:
-  contributors: [""]
-  discussion-link: ""
-  links: [""]
+  contributors: ["@0xelpeze (Twitter) @ GoPlusSecurity" , "@theyavuzaslan (Twitter) @ GoPlusSecurity" , "@Allen @GoPlusSecurity"]
+  discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/186"
+  links: ["gopluslabs.io"]
   execution-status: "not-started"
 ---
 
