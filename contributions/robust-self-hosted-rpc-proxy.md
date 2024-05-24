@@ -10,7 +10,7 @@ skill-sets: ["Full Stack Development", "Protocol Development"]
 labels: ["Developer Tooling", "Accessibility/Transparency", "Chain Infrastructure"]
 contributions: 
         contributors: ["https://t.me/mummyhap (Telegram) @ BlockPI Network"]
-        discussion-link: ""
+        discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/192，https://discord.com/channels/667044843901681675/1243417269372194886"
         links: ["https://github.com/BlockPILabs/aggregator"]
         execution-status: "in-progress-open"
 ---
