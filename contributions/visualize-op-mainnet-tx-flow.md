@@ -1,18 +1,25 @@
 ---
-title: "Visualize OP Mainnet Transaction Flow"
-description: "This visualizer, ideally presented as an interactive website, would provide real-time insights into transaction flows, giving users a new way to engage with OP Mainnet."
-lang: "en-US"
-type: "Draft Project Idea"
-authors: ["@smartcontracts (GitHub) @ OP Labs"]
-category: "dev-tooling"
-effort: "Large"
-skill-sets: ["Protocol Development", "Back End Development", "Full Stack Development", "Front End Development"]
-labels: ["OP Stack", "Developer Tooling", "Accessibility/Transparency"]
-contributions: 
-        contributors: [""]
-        discussion-link: ""
-        links: [""]
-        execution-status: "not-started"
+title: 'Visualize OP Mainnet Transaction Flow'
+description: 'This visualizer, ideally presented as an interactive website, would provide real-time insights into transaction flows, giving users a new way to engage with OP Mainnet.'
+lang: 'en-US'
+type: 'Draft Project Idea'
+authors: ['@smartcontracts (GitHub) @ OP Labs']
+category: 'dev-tooling'
+effort: 'Large'
+skill-sets:
+  [
+    'Protocol Development',
+    'Back End Development',
+    'Full Stack Development',
+    'Front End Development',
+  ]
+labels: ['OP Stack', 'Developer Tooling', 'Accessibility/Transparency']
+contributions:
+  contributors:
+    ['@Billy191 (Twitter) @ Catalyzt Tech', 'Wit03 (Twitter) @ Catalyzt Tech']
+  discussion-link: 'https://catalyzt.tech/'
+  links: ['']
+  execution-status: 'in-progress-closed'
 ---
 
 # Visualize OP Mainnet Transaction Flow
@@ -37,6 +44,7 @@ A significant part of understanding the state and health of a blockchain lies in
 ## Get inspired
 
 Example websites:
+
 - [Cyber Map](https://cybermap.kaspersky.com/) - Thanks @sambacha GitHub
 - [Crypto Flows](https://cryptoflows.info/) - Thanks @dmars300 GitHub
 - [TX Street](https://txstreet.com/v/eth-btc) - Thanks @dmars300 GitHub
