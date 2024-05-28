@@ -1,6 +1,6 @@
 # Claiming an Idea
 
-To claim an idea you will need to complete the following tasks:
+To claim an idea you will need to jump to [this GitHub](https://github.com/ethereum-optimism/ecosystem-contributions/tree/main/contributions) first, then complete the following tasks:
 
 * [ ] Create a PR. Copy paste this todo list into the description.
 * [ ] Create a discussion thread:
@@ -15,7 +15,8 @@ To claim an idea you will need to complete the following tasks:
         links: [""]
         execution-status: ""
         ```
-    * [ ] Add the team working on it. The format is `"@handle (Platform) @ team"`. 
+
+  - [ ] Add the team working on it. The format is `"@handle (Platform) @ team"`.
         For example: `["@tezter (GitHub) @ DeFo", "@jack (Twitter)"]`
     * [ ] Add the link to your discussion in GitHub/Discord. You can _**ONLY HAVE ONE LINK for your discussion.**_
     * [ ] (OPTIONAL) Add links to your repository, the website for the build, or other relevant links for your build. 
