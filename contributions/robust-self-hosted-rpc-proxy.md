@@ -9,10 +9,10 @@ effort: "Large"
 skill-sets: ["Full Stack Development", "Protocol Development"]
 labels: ["Developer Tooling", "Accessibility/Transparency", "Chain Infrastructure"]
 contributions: 
-        contributors: [""]
-        discussion-link: ""
-        links: [""]
-        execution-status: "not-started"
+        contributors: ["https://t.me/mummyhap (Telegram) @ BlockPI Network"]
+        discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/192"
+        links: ["https://github.com/BlockPILabs/aggregator"]
+        execution-status: "in-progress-open"
 ---
 
 # Simple Robust Self-Hosted RPC Proxy
