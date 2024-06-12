@@ -9,10 +9,10 @@ effort: "Large"
 skill-sets: ["Front End Development", "Data Analysis", "Full Stack Development"]
 labels: ["Accessibility/Transparency", "Developer Tooling", "OP Stack"]
 contributions: 
-        contributors: [""]
-        discussion-link: ""
+        contributors: ["@sanprab (GitHub) @ CoinTracker"]
+        discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/195"
         links: [""]
-        execution-status: "not-started"
+        execution-status: "in-progress-open"
 ---
 
 # OP Mainnet Resource Usage Tracker
