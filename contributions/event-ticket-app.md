@@ -9,10 +9,10 @@ effort: "Medium"
 skill-sets: ["Front End Development", "Back End Development", "Full Stack Development", "Smart Contract Development"]
 labels: ["Attestations", "Consumer dApps", "DeSocial"]
 contributions:
-  contributors: [""]
-  discussion-link: ""
-  links: [""]
-  execution-status: "not-started"
+  contributors: ["@wslyvh (GitHub) @ Show Up", "@wslyvh (Twitter)"]
+  discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/168"
+  links: ["https://www.showup.events/", "https://github.com/wslyvh/show-up", "https://x.com/showupprotocol"]
+  execution-status: "completed"
 ---
 
 # Events Ticketing Application
