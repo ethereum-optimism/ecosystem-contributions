@@ -9,9 +9,9 @@ effort: "Medium"
 skill-sets: ["Protocol Development", "Back End Development", "Smart Contract Development"]
 labels: ["Attestations", "Developer Tooling", "Accessibility/Transparency"]
 contributions:
-  contributors: ["@lucas-op (GitHub), @harshmittal1750 (GitHub)"]
+  contributors: ["@lucas-op (GitHub), @harshmittal1750 (GitHub). @ribeirojose (GitHub) "]
   discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/197"
-  links: ["https://github.com/lucas-op/decentralized-pgp-key-server"]
+  links: ["https://github.com/bleu/eas-pgp"]
   execution-status: "in-progress-open"
 ---
 
