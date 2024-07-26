@@ -57,13 +57,13 @@
     ],
     "contributions": {
       "contributors": [
-        ""
+        "@MaximeServais77(Twitter)"
       ],
-      "discussion-link": "",
+      "discussion-link": "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/177",
       "links": [
-        ""
+        "https://www.ethereum-ecosystem.com/apps"
       ],
-      "execution-status": "not-started"
+      "execution-status": "in-progress-open"
     }
   },
   {
@@ -414,13 +414,14 @@
     ],
     "contributions": {
       "contributors": [
-        ""
+        "@Billy191 (Twitter) @ Catalyzt Tech",
+        "Wit03 (Twitter) @ Catalyzt Tech"
       ],
-      "discussion-link": "",
+      "discussion-link": "https://catalyzt.tech/",
       "links": [
         ""
       ],
-      "execution-status": "not-started"
+      "execution-status": "in-progress-open"
     }
   },
   {
@@ -510,13 +511,14 @@
     ],
     "contributions": {
       "contributors": [
-        ""
+        "@Billy191 (Twitter) @ Catalyzt Tech",
+        "Wit03 (Twitter) @ Catalyzt Tech"
       ],
-      "discussion-link": "",
+      "discussion-link": "https://catalyzt.tech/",
       "links": [
         ""
       ],
-      "execution-status": "not-started"
+      "execution-status": "in-progress-closed"
     }
   }
 ]
