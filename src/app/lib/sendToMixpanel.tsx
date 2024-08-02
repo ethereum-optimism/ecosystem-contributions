@@ -38,6 +38,7 @@ const sendToMixpanel = async (eventName: string, eventProperties?: Record<string
     const properties = {
         ...eventProperties,
         ...additionalProperties,
+        ip: clientIP,
     };
     //Finally we are calling the mixpanel api route
     fetch("/api/mixpanel", {
@@ -47,8 +48,7 @@ const sendToMixpanel = async (eventName: string, eventProperties?: Record<string
         },
         body: JSON.stringify({
             event: eventName,
-            properties: properties,
-            ip: clientIP
+            properties: properties
         }),
     });
 }

@@ -8,8 +8,7 @@ const POST = async (req: Request) => {
     const data = await req.json();
 
     try {
-        const { event, properties, ip } = data;
-        console.log("X-forwarded-for: " + ip);
+        const { event, properties } = data;
         mPanel.track(event, properties);
 
         return NextResponse.json(
