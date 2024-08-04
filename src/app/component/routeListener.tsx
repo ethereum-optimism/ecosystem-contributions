@@ -9,8 +9,7 @@ export function RouteChangeListener() {
 
   useEffect(() => {
       // for MixPanel implementation
-      console.log("route change to: ", pathname);
-      sendToMixpanel("page_view")
+      // sendToMixpanel("page_view")
 
   }, [pathname])
 
