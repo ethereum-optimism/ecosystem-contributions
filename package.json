@@ -16,10 +16,10 @@
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "gray-matter": "^4.0.3",
+    "mixpanel": "^0.18.0",
     "next": "14.1.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-ga4": "^2.1.0",
     "react-headless-pagination": "^1.1.5",
     "react-tooltip": "^5.26.3",
     "remark": "^15.0.1",
