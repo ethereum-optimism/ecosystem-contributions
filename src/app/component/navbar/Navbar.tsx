@@ -54,22 +54,23 @@ const Navbar = () => {
 
 
   async function HandleNavbarEvent(menuName:string) {
-    switch (menuName) {
+    try {
+      switch (menuName) {
         case "RetroPGF":
           await sendToMixpanel(NAV_RETROPGF_CLICK)
           break;
-
         case "Bridge":
           await sendToMixpanel(NAV_BRIDGE_CLICK)
           break;
-
         case "Airdrop":
           await sendToMixpanel(NAV_AIRDROP_CLICK)
           break;
-          
         case "Builder":
           await sendToMixpanel(NAV_BUILDER_CLICK)
           break;
+      }
+    } catch (error) {
+      console.error(`Failed to send Mixpanel event for ${menuName}:`, error);
     }
   }
 

@@ -6,7 +6,7 @@ const PAGE_VIEW = "Page View"
 // src/app/component/navbar/Navbar.tsx
 const NAV_RETROPGF_CLICK = "RetroPGF Click"
 const NAV_BRIDGE_CLICK = "Bridge Click"
-const NAV_AIRDROP_CLICK = "AirDrop Click"
+const NAV_AIRDROP_CLICK = "Airdrop Click"
 const NAV_BUILDER_CLICK = "Builder Click"
 
 // src/app/(navbar)/(home)/component/Tab.tsx
@@ -14,7 +14,7 @@ const BUILDER_IDEA_CLICK = "Builder Ideas Click"
 const BUILDER_IDEA_CLICK_PROPERTY = "tab"
 
 //  src/app/(navbar)/issue/[id]/Cpage.tsx
-const CLIAMS_IDEA_CLICK = "Cliams Idea Click"
+const CLAIMS_IDEA_CLICK = "Claims Idea Click"
 const JOIN_DISCUSSION_CLICK = "Join Discussion Click"
 const PROJECTNAME_PROPERTY = "Project name"
 
@@ -105,7 +105,7 @@ const labelEventMapping: Record<LabelKey, string> = {
 export {
     BUILDER_IDEA_CLICK, 
     PAGE_VIEW,
-    CLIAMS_IDEA_CLICK,
+    CLAIMS_IDEA_CLICK,
     JOIN_DISCUSSION_CLICK,
     DEVELOPER_TOOLING_CLICK,
     DEVELOPER_ONBOARDING_CLICK,

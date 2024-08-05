@@ -7,7 +7,7 @@ import { categoryKeyAndValue } from '../../../(home)/Text'
 import Link from 'next/link'
 import Home from '@/public/icon/HomeIcon'
 import sendToMixpanel from '@/src/app/lib/sendToMixpanel'
-import { CLIAMS_IDEA_CLICK, JOIN_DISCUSSION_CLICK, PROJECTNAME_PROPERTY } from '@/public/static/mixpanel/event-name'
+import { CLAIMS_IDEA_CLICK, JOIN_DISCUSSION_CLICK, PROJECTNAME_PROPERTY } from '@/public/static/mixpanel/event-name'
 
 function handleExecuteStatus(status: string) {
   switch (status) {
@@ -245,7 +245,7 @@ export default function OverViewSection({
             href={`https://github.com/ethereum-optimism/ecosystem-contributions/blob/main/docs/claim-an-idea.md`}
             target="_blank"
             onClick={() => {
-              sendToMixpanel(CLIAMS_IDEA_CLICK,  {[PROJECTNAME_PROPERTY]: content.title})
+              sendToMixpanel(CLAIMS_IDEA_CLICK,  {[PROJECTNAME_PROPERTY]: content.title})
             }}
           >
             <button className="flex flex-row justify-center font-semibold">
