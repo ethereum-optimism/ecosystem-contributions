@@ -4,10 +4,10 @@ import { handleStatus } from '../../../(home)/component/GridCard'
 import { MarkDownData } from '../../../(home)/component/Home'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { categoryKeyAndValue } from '../../../(home)/Text'
-import NavigateIcon from '@/public/icon/NavigateIcon'
 import Link from 'next/link'
 import Home from '@/public/icon/HomeIcon'
-import GitHubIcon from '@/public/icon/github-mark'
+import sendToMixpanel from '@/src/app/lib/sendToMixpanel'
+import { CLAIMS_IDEA_CLICK, JOIN_DISCUSSION_CLICK, PROJECTNAME_PROPERTY } from '@/public/static/mixpanel/event-name'
 
 function handleExecuteStatus(status: string) {
   switch (status) {
@@ -71,7 +71,7 @@ export default function OverViewSection({
       className="border-0 bg-white p-5 sm:p-6 md:p-10 lg:rounded-md lg:border items-center w-auto  lg:mb-6"
     >
       <Link
-        href="/#project"
+        href="/#builder ideas"
         className="flex gap-2 items-center ml-1 mb-6 lg:hidden"
       >
         <Home width="16" height="16" />
@@ -220,6 +220,9 @@ export default function OverViewSection({
                 : 'https://discord.com/invite/optimism/'
             }
             target="_blank"
+            onClick={() => {
+              sendToMixpanel(JOIN_DISCUSSION_CLICK, {[PROJECTNAME_PROPERTY]: content.title})
+            }}
           >
             <button className="flex flex-row justify-center font-semibold">
               <div className="mr-2">Join Discussion</div>
@@ -241,10 +244,9 @@ export default function OverViewSection({
             className="w-fit border px-8 py-3 bg-black text-white rounded-3xl hover:invert transition ease-linear duration-300 shadow-md"
             href={`https://github.com/ethereum-optimism/ecosystem-contributions/blob/main/docs/claim-an-idea.md`}
             target="_blank"
-            // href={{
-            //   pathname: '/docs/claim-an-idea.md',
-            //   query: { id: content.id },
-            // }}
+            onClick={() => {
+              sendToMixpanel(CLAIMS_IDEA_CLICK,  {[PROJECTNAME_PROPERTY]: content.title})
+            }}
           >
             <button className="flex flex-row justify-center font-semibold">
               <div className="mr-2">Claim Idea</div>
@@ -267,6 +269,7 @@ export default function OverViewSection({
               href={`https://github.com/ethereum-optimism/ecosystem-contributions/blob/main/contributions/${content.id}.md`}
               target="_blank"
               className="flex flex-row justify-center items-center mr-4 text-slate-700 hover:underline transition ease-linear duration-300"
+              
             >
               {/* <div className="mr-1.5">View</div> */}
               <svg
@@ -279,18 +282,7 @@ export default function OverViewSection({
               </svg>
             </Link>
           </div>
-          {/* <Link
-            className="w-fit mt-4 px-8 py-3 text-black rounded-3xl transition ease-linear duration-300 "
-            href={{
-              pathname: '/docs/claim-an-idea.md',
-              query: { id: content.id },
-            }}
-            target="_blank"
-          >
-            <button className="text-center font-semibold text-xs">
-              How to claim?
-            </button>
-          </Link> */}
+    
         </div>
       </div>
     </section>

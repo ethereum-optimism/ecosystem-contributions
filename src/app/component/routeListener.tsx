@@ -1,17 +1,23 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import sendToMixpanel from '../lib/sendToMixpanel';
+import { PAGE_VIEW, PROJECTNAME_PROPERTY } from '@/public/static/mixpanel/event-name';
 
 export function RouteChangeListener() {
-  const pathname = usePathname();
+  let pathname = usePathname();
+
+  const hasRun = useRef<{ [key: string]: boolean }>({});
+  // if (!hasRun.current[pathname]) {
 
   useEffect(() => {
-      // for MixPanel implementation
-      // sendToMixpanel("page_view")
-
-  }, [pathname])
+    sendToMixpanel(PAGE_VIEW);
+    return () => {
+      pathname = ""
+    }
+  }, [pathname]);
+    
 
   return <>
   </>;
