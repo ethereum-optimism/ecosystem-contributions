@@ -16,7 +16,7 @@ interface DialogFilterProps {
   open: boolean
   onClose: () => void
   checkBox: CheckBoxStateType
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
   handleClearFilter: () => void
 }
 export default function DialogFilter({
@@ -134,7 +134,8 @@ export default function DialogFilter({
                                   ) =>
                                     handleChangeCheckBox(
                                       'Label' as keyof CheckBoxStateType,
-                                      e.target.value
+                                      e.target.value,
+                                      e.target.value,
                                     )
                                   }
                                 />
@@ -154,7 +155,8 @@ export default function DialogFilter({
                                   ) =>
                                     handleChangeCheckBox(
                                       'Label' as keyof CheckBoxStateType,
-                                      e.target.value
+                                      e.target.value,
+                                      e.target.value,
                                     )
                                   }
                                 />
