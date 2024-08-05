@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "pnpm run prebuild && next dev",
     "build": "pnpm run prebuild && next build",
     "build:unprocessed": "next build",
     "start": "next start",
