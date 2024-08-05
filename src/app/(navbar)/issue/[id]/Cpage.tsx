@@ -22,9 +22,8 @@ export default function Cpage({ content }: { content: MarkDownData }) {
         <OverViewSection content={content} overViewRef={overViewRef} />
         {/* <div className="lg:hidden bg-white p-4 lg:rounded-md lg:shadow-md items-center w-auto lg:mx-10 lg:my-6">
             <hr className="mx-4 border-t border-gray-300" />
-          </div> */}
-
-        {/* <ProjectSummarySection
+          </div>
+        <ProjectSummarySection
           content={content}
           /> */}
 
