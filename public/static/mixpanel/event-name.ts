@@ -21,6 +21,7 @@ const SKILL_SET_FILTER_SELECT = "Skill Set Filter Select"
 const NAV_RETROPGF_CLICK = "RetroPGF Click"
 const NAV_BRIDGE_CLICK = "Bridge Click"
 const NAV_AIRDROP_CLICK = "AirDrop Click"
+const NAV_BUILDER_CLICK = "Builder Click"
 
 
 export {
@@ -40,4 +41,5 @@ export {
     NAV_RETROPGF_CLICK,
     NAV_BRIDGE_CLICK,
     NAV_AIRDROP_CLICK,
+    NAV_BUILDER_CLICK,
 }
