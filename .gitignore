@@ -37,5 +37,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Output from process markdown
-public/static/json/contributions.json
+public/static/json/output.json
 

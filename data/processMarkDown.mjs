@@ -18,10 +18,11 @@ export async function getResources() {
 
   const jsonData = JSON.stringify(postData, null, 2)
 
-  const outputDir = path.join(process.cwd(), 'public/static/json')
-  const outputPath = path.join(outputDir, 'contributions.json')
+  const outputPath = path.join(
+    process.cwd(),
+    './public/static/json/output.json'
+  )
 
-  await fs.mkdir(outputDir, { recursive: true })
   await fs.writeFile(outputPath, jsonData)
 
   // return outputPath;
