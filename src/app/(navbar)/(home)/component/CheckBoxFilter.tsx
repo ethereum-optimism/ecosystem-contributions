@@ -7,12 +7,11 @@ import {
   CheckBoxEffort,
   CheckBoxExecutionStatus,
   CheckBoxSkillsets,
-  CheckBoxType,
 } from './Filter/CheckBox'
 
 interface CheckBoxFilterProps {
   checkBox: CheckBoxStateType
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
   handleClearFilter: () => void
 }
 export default function CheckBoxFilter({
@@ -30,11 +29,7 @@ export default function CheckBoxFilter({
       </div>
       <hr className="h-[0.0625rem] bg-gray-200" />
 
-      {/* 
-            ░█▀▀▀ ▀▄░▄▀ ░█▀▀▀ ░█▀▀█ ░█─░█ ▀▀█▀▀ ▀█▀ ░█▀▀▀█ ░█▄─░█ ░█▀▀▀█ ▀▀█▀▀ ─█▀▀█ ▀▀█▀▀ ░█─░█ ░█▀▀▀█ 
-            ░█▀▀▀ ─░█── ░█▀▀▀ ░█─── ░█─░█ ─░█── ░█─ ░█──░█ ░█░█░█ ─▀▀▀▄▄ ─░█── ░█▄▄█ ─░█── ░█─░█ ─▀▀▀▄▄ 
-            ░█▄▄▄ ▄▀░▀▄ ░█▄▄▄ ░█▄▄█ ─▀▄▄▀ ─░█── ▄█▄ ░█▄▄▄█ ░█──▀█ ░█▄▄▄█ ─░█── ░█─░█ ─░█── ─▀▄▄▀ ░█▄▄▄█
-        */}
+      {/* Execution Status */}
       <Disclosure defaultOpen={true}>
         {({ open }) => (
           <>
@@ -82,11 +77,7 @@ export default function CheckBoxFilter({
 
       <hr className="h-[0.0625rem] bg-gray-200" />
 
-      {/* 
-            ░█▀▀▀ ░█▀▀▀ ░█▀▀▀ ░█▀▀▀█ ░█▀▀█ ▀▀█▀▀ 
-            ░█▀▀▀ ░█▀▀▀ ░█▀▀▀ ░█──░█ ░█▄▄▀ ─░█── 
-            ░█▄▄▄ ░█─── ░█─── ░█▄▄▄█ ░█─░█ ─░█──
-         */}
+        {/* Effort */}
       <Disclosure defaultOpen={true}>
         {({ open }) => (
           <>
@@ -134,11 +125,7 @@ export default function CheckBoxFilter({
 
       <hr className="h-[0.0625rem] bg-gray-200" />
 
-      {/* 
-              ░█▀▀▀█ ░█─▄▀ ▀█▀ ░█─── ░█─── 　 ░█▀▀▀█ ░█▀▀▀ ▀▀█▀▀ 
-              ─▀▀▀▄▄ ░█▀▄─ ░█─ ░█─── ░█─── 　 ─▀▀▀▄▄ ░█▀▀▀ ─░█── 
-              ░█▄▄▄█ ░█─░█ ▄█▄ ░█▄▄█ ░█▄▄█ 　 ░█▄▄▄█ ░█▄▄▄ ─░█──
-          */}
+     {/* SkillSet */}
       <Disclosure defaultOpen={true}>
         {({ open }) => (
           <>
@@ -186,12 +173,7 @@ export default function CheckBoxFilter({
 
       <hr className="h-[0.0625rem] bg-gray-200" />
 
-      {/*
-            ░█─── ─█▀▀█ ░█▀▀█ ░█▀▀▀ ░█─── 
-            ░█─── ░█▄▄█ ░█▀▀▄ ░█▀▀▀ ░█─── 
-            ░█▄▄█ ░█─░█ ░█▄▄█ ░█▄▄▄ ░█▄▄█
-        */}
-
+      {/* Label */}
       <Disclosure defaultOpen={true}>
         {({ open }) => (
           <>
@@ -236,7 +218,8 @@ export default function CheckBoxFilter({
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                       handleChangeCheckBox(
                         'Label' as keyof CheckBoxStateType,
-                        e.target.value
+                        e.target.value,
+                        e.target.value,
                       )
                     }
                   />
@@ -246,64 +229,6 @@ export default function CheckBoxFilter({
           </>
         )}
       </Disclosure>
-
-      {/* <hr className='h-[0.0625rem] bg-gray-200'/> */}
-
-      {/* <div className="flex flex-col gap-1 ">
-            <h6 className="text-xs font-medium text-gray-400 mb-2">Category</h6>
-            <CheckBoxCategory
-                checkBox={checkBox}
-                handleChangeCheckBox={handleChangeCheckBox}
-            />
-        </div> */}
-
-      {/* {newFilter["type"].length > 1 && <hr className='h-[0.0625rem] bg-gray-200'/>}
-
-        {newFilter["type"].length > 1 && 
-            <Disclosure 
-            defaultOpen={true}>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className="flex items-center w-full justify-between rounded-lg text-left text-sm font-medium focus:outline-none ">
-              <h6 className="text-xs font-medium text-gray-400 self-center">Type</h6>
-                <svg
-                    className={`${
-                      open ? 'rotate-180 transform' : ''
-                    } h-5 w-5 text-purple-500`}
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 10L12 15L17 10"
-                      stroke="#000000"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-              </Disclosure.Button>
-              <Transition
-                    enter="transition duration-200 ease-out"
-                    enterFrom="transform scale-95 opacity-0"
-                    enterTo="transform scale-100 opacity-100"
-                    leave="transition duration-200 ease-out"
-                    leaveFrom="transform scale-100 opacity-100"
-                    leaveTo="transform scale-95 opacity-0"
-                >
-                    <Disclosure.Panel className="text-sm text-gray-500">
-                    <CheckBoxType
-                        checkBox={checkBox}
-                        handleChangeCheckBox={handleChangeCheckBox}
-                    />
-                    </Disclosure.Panel>
-                </Transition>
-            </>
-          )}
-        </Disclosure>
-        } */}
     </div>
   )
 }

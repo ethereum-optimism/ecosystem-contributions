@@ -14,7 +14,7 @@ export default function DrawerFilter({
   open: boolean
   onClose: () => void
   checkBox: CheckBoxStateType
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
   handleClearFilter: () => void
 }) {
   return (
@@ -93,7 +93,8 @@ export default function DrawerFilter({
                           onClick={() => {
                             handleChangeCheckBox(
                               'ExecutionStatus' as keyof CheckBoxStateType,
-                              item.id
+                              item.id,
+                              item.name
                             )
                           }}
                         >
@@ -124,6 +125,7 @@ export default function DrawerFilter({
                           onClick={() => {
                             handleChangeCheckBox(
                               'Effort' as keyof CheckBoxStateType,
+                              item,
                               item
                             )
                           }}
@@ -155,7 +157,8 @@ export default function DrawerFilter({
                           onClick={() => {
                             handleChangeCheckBox(
                               'Category' as keyof CheckBoxStateType,
-                              item.id
+                              item.id,
+                              item.name
                             )
                           }}
                         >
@@ -186,7 +189,8 @@ export default function DrawerFilter({
                           onClick={() => {
                             handleChangeCheckBox(
                               'SkillSets' as keyof CheckBoxStateType,
-                              item
+                              item,
+                              item,
                             )
                           }}
                         >
@@ -216,6 +220,7 @@ export default function DrawerFilter({
                           onClick={() => {
                             handleChangeCheckBox(
                               'Label' as keyof CheckBoxStateType,
+                              item,
                               item
                             )
                           }}

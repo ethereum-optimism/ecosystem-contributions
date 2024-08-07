@@ -8,7 +8,7 @@ export function CheckBoxType({
   handleChangeCheckBox,
 }: {
   checkBox: Pick<CheckBoxStateType, 'Type'>
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
 }) {
   return (
     <>
@@ -24,6 +24,7 @@ export function CheckBoxType({
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               handleChangeCheckBox(
                 'Type' as keyof CheckBoxStateType,
+                e.target.value,
                 e.target.value
               )
             }
@@ -39,7 +40,7 @@ export function CheckBoxEffort({
   handleChangeCheckBox,
 }: {
   checkBox: Pick<CheckBoxStateType, 'Effort'>
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
 }) {
   return (
     <>
@@ -53,6 +54,7 @@ export function CheckBoxEffort({
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             handleChangeCheckBox(
               'Effort' as keyof CheckBoxStateType,
+              e.target.value,
               e.target.value
             )
           }
@@ -67,7 +69,7 @@ export function CheckBoxExecutionStatus({
   handleChangeCheckBox,
 }: {
   checkBox: Pick<CheckBoxStateType, 'ExecutionStatus'>
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
 }) {
   return (
     <>
@@ -83,7 +85,8 @@ export function CheckBoxExecutionStatus({
               // console.log(item)
               handleChangeCheckBox(
                 'ExecutionStatus' as keyof CheckBoxStateType,
-                e.target.value
+                e.target.value,
+                item.name,
               )
             }}
           />
@@ -98,7 +101,7 @@ export function CheckBoxSkillsets({
   handleChangeCheckBox,
 }: {
   checkBox: Pick<CheckBoxStateType, 'SkillSets'>
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
 }) {
   return (
     <>
@@ -112,7 +115,8 @@ export function CheckBoxSkillsets({
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             handleChangeCheckBox(
               'SkillSets' as keyof CheckBoxStateType,
-              e.target.value
+              e.target.value,
+              e.target.value,
             )
           }
         />
@@ -126,7 +130,7 @@ export function CheckBoxCategory({
   handleChangeCheckBox,
 }: {
   checkBox: Pick<CheckBoxStateType, 'Category'>
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
 }) {
   return (
     <>
@@ -140,7 +144,8 @@ export function CheckBoxCategory({
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             handleChangeCheckBox(
               'Category' as keyof CheckBoxStateType,
-              e.target.value
+              e.target.value,
+              item.name,
             )
           }
         />

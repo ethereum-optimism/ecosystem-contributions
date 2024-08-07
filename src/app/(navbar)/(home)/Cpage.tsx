@@ -15,6 +15,8 @@ import OverViewTab from './component/OverViewTab'
 import { useSearchParams } from 'next/navigation'
 import Filter from '@/public/static/filter/filter.json'
 import { useParams } from 'next/navigation'
+import sendToMixpanel from '../../lib/sendToMixpanel'
+import { CategoryKey,  EFFORT_PROPERTY_KEY,  EXECUTION_PROPERTY_KEY,  EffortKey, ExecutionStatusKey, FilterKey, LABEL_PROPERTY_KEY, LabelKey, PROTOCOL_INFRASTRUCTURE_CLICK, SKILLSET_PROPERTY_KEY, SkillSetKey, categoryEventMapping, effortEventMapping, executionStatusEventMapping, labelEventMapping, skillSetEventMapping } from '@/public/static/mixpanel/event-name'
 
 interface HomeProps {
   markdownContents: Omit<MarkDownData, 'contentHtml'>[]
@@ -167,22 +169,27 @@ export default function Cpage({ markdownContents, overViewData }: HomeProps) {
   }
 
   const handleChangeCheckBox = (
-    name: keyof CheckBoxStateType,
-    value: string
+    key: keyof CheckBoxStateType,
+    id: string,
+    name: string,
   ) => {
+    let checked:boolean = false
     setCheckBox((prev) => {
       let temp = { ...prev }
 
-      let index = temp[name].findIndex((elem) => elem === value)
-
+      let index = temp[key].findIndex((elem) => elem === id)
+      // if no item in array = checkbox have been checked
       if (index === -1) {
-        temp[name] = [...temp[name], value]
+        temp[key] = [...temp[key], id]
+        checked = true
       } else {
-        temp[name] = temp[name].filter((elem) => elem !== value)
+        temp[key] = temp[key].filter((elem) => elem !== id)
       }
 
       return temp
     })
+    HandleFilterEventMixPanel(key, id as FilterKey, name, checked)
+
   }
 
   const handleClearFilter = () => {
@@ -204,6 +211,67 @@ export default function Cpage({ markdownContents, overViewData }: HomeProps) {
     })
   }
 
+ 
+
+  // label event handler
+  async function HandleFilterEventMixPanel( key: keyof CheckBoxStateType, id: FilterKey, name: string, selected: boolean) {
+    switch (key) {
+        case 'Category':
+        await HandleCategoryFilerEvent(id as CategoryKey, selected)
+        break;
+
+        case 'Label': {
+          const labelEvent = labelEventMapping[id as LabelKey];
+          if (labelEvent) {
+            await HandleHaveProperties(labelEvent, LABEL_PROPERTY_KEY, name, selected);
+          }
+          break;
+        }
+
+        case 'ExecutionStatus': {
+          const executionStatusEvent = executionStatusEventMapping[id as ExecutionStatusKey];
+          if (executionStatusEvent) {
+            await HandleHaveProperties(executionStatusEvent, EXECUTION_PROPERTY_KEY, name, selected);
+          }
+          break;
+        }
+
+        case 'Effort': {
+          const effortEvent = effortEventMapping[id as EffortKey];
+          if (effortEvent) {
+            await HandleHaveProperties(effortEvent, EFFORT_PROPERTY_KEY, name, selected);
+          }
+          break;
+        }
+      
+        case 'SkillSets': {
+          const skillSetEvent = skillSetEventMapping[id as SkillSetKey];
+          if (skillSetEvent) {
+            await HandleHaveProperties(skillSetEvent, SKILLSET_PROPERTY_KEY, name, selected);
+          }
+          break;
+        }
+      
+    }
+  }
+
+  // category event handler
+  // * This may group by event name and add the properties of each categories instead of having many keys
+  async function HandleCategoryFilerEvent(categoryId:CategoryKey, selected:boolean) {
+    const event = categoryEventMapping[categoryId];
+    if (event) {
+      await sendToMixpanel(event, {["selected"]:selected});
+    } else {
+      console.error(`No event mapping found for categoryId: ${categoryId}`);
+    }
+  }
+
+  // handle all filter have have properties
+  async function HandleHaveProperties(event:string, key:string ,name:string, selected:boolean) {
+      await sendToMixpanel(event, {[key]:name, ["selected"]:selected});
+  }
+
+
   useEffect(() => {
     if (fullQuery && fullQuery.length > 2) {
       handleGrouping(fullQuery)
@@ -215,10 +283,10 @@ export default function Cpage({ markdownContents, overViewData }: HomeProps) {
   useEffect(() => {
     const currentHash = window.location.hash
     switch (currentHash) {
-      case '#overview':
+      case '#get%20started':
         setState((prev) => ({ ...prev, index: 0 }))
         break
-      case '#project':
+      case '#builder%20ideas':
         setState((prev) => ({ ...prev, index: 1 }))
         break
 
@@ -228,16 +296,12 @@ export default function Cpage({ markdownContents, overViewData }: HomeProps) {
     }
   }, [sectionDetector])
 
-  // const router = useRouter()
+   
 
   return (
     <>
-      {/* 
-                ─█▀▀█ ░█─── ░█─── 　 ░█▀▀█ ▀▀█▀▀ ░█▄─░█ 
-                ░█▄▄█ ░█─── ░█─── 　 ░█▀▀▄ ─░█── ░█░█░█ 
-                ░█─░█ ░█▄▄█ ░█▄▄█ 　 ░█▄▄█ ─░█── ░█──▀█
-            */}
-
+     
+      {/* Tab Section */}
       <TabPage state={state} setState={setState} setCheckBox={setCheckBox} />
 
       {state.index === 0 && <OverViewTab overViewData={overViewData} />}

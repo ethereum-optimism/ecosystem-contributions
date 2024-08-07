@@ -1,7 +1,8 @@
 'use client'
-import Link from 'next/link'
 import { CheckBoxStateType, TabStateType } from './Home'
 import config from '@/public/static/homepage/config.json' assert { type: 'json' }
+import sendToMixpanel from '@/src/app/lib/sendToMixpanel'
+import { BUILDER_IDEA_CLICK, BUILDER_IDEA_CLICK_PROPERTY } from '@/public/static/mixpanel/event-name'
 export default function TabPage({
   state,
   setState,
@@ -26,7 +27,7 @@ export default function TabPage({
               id={'#' + item.text.toLowerCase()}
               onClick={() => {
                 handleChangeIndex(i)
-                // document.getElementById("#" + item.text.toLowerCase())?.scrollIntoView()
+                sendToMixpanel(BUILDER_IDEA_CLICK, {[BUILDER_IDEA_CLICK_PROPERTY]:item.text})
               }}
               className={`${
                 item.index === state.index ? 'text-slate-900' : 'text-slate-500'

@@ -17,7 +17,7 @@ interface ProjectTabProps {
   state: TabStateType
   setState: React.Dispatch<React.SetStateAction<TabStateType>>
   checkBox: CheckBoxStateType
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
+ handleChangeCheckBox: (key: keyof CheckBoxStateType, id: string, name: string) => void
   currentPage: number
   currentItems: Omit<MarkDownData, 'contentHtml'>[]
   pageCount: number
@@ -39,13 +39,12 @@ export default function ProjectTab({
   handleSearchChange,
   search,
 }: ProjectTabProps) {
+
+
   return (
-    <div className="animate-slideleft overflow-x-hidden">
-      {/* 
-                ▀█▀ ░█▄─░█ ░█▀▀█ ░█─░█ ▀▀█▀▀ 　 ░█▀▀▀█ ░█▀▀▀ ─█▀▀█ ░█▀▀█ ░█▀▀█ ░█─░█ 　 ░█▀▀▀█ ░█▀▀▀█ ░█▀▀█ ▀▀█▀▀ 　 ░█─── ─█▀▀█ ░█──░█ ░█▀▀▀█ ░█─░█ ▀▀█▀▀ 
-                ░█─ ░█░█░█ ░█▄▄█ ░█─░█ ─░█── 　 ─▀▀▀▄▄ ░█▀▀▀ ░█▄▄█ ░█▄▄▀ ░█─── ░█▀▀█ 　 ─▀▀▀▄▄ ░█──░█ ░█▄▄▀ ─░█── 　 ░█─── ░█▄▄█ ░█▄▄▄█ ░█──░█ ░█─░█ ─░█── 
-                ▄█▄ ░█──▀█ ░█─── ─▀▄▄▀ ─░█── 　 ░█▄▄▄█ ░█▄▄▄ ░█─░█ ░█─░█ ░█▄▄█ ░█─░█ 　 ░█▄▄▄█ ░█▄▄▄█ ░█─░█ ─░█── 　 ░█▄▄█ ░█─░█ ──░█── ░█▄▄▄█ ─▀▄▄▀ ─░█──
-             */}
+    <div className="animate-slideleft ">
+      {/* Input Search Sort Layout */}
+      
       <div className="flex flex-col gap-4 ">
         <div className="flex items-center gap-3 lg:grid lg:grid-cols-2 lg:gap-4 mt-4">
           <div className="w-full">
@@ -53,7 +52,7 @@ export default function ProjectTab({
               Icon={<SearchIcon />}
               value={search}
               onChange={handleSearchChange}
-              className="border placeholder-slate-500 bg-white text-slate-500 focus:ring w-full px-1 py-1.5 rounded-full min-h-[40px]"
+              className="border placeholder-slate-500 bg-white text-slate-500 focus:ring-1 focus:ring-red-400 w-full px-1 py-1.5 rounded-full min-h-[40px]"
               placeholder="Search Project"
             />
           </div>
@@ -68,12 +67,7 @@ export default function ProjectTab({
             <SettingIcon className="" />
           </div>
 
-          {/*             
-                        ░█▀▀▀█ ░█▀▀▀█ ░█▀▀█ ▀▀█▀▀ 　 ░█▀▀█ ▀▀█▀▀ ░█▄─░█ 
-                        ─▀▀▀▄▄ ░█──░█ ░█▄▄▀ ─░█── 　 ░█▀▀▄ ─░█── ░█░█░█ 
-                        ░█▄▄▄█ ░█▄▄▄█ ░█─░█ ─░█── 　 ░█▄▄█ ─░█── ░█──▀█
-                */}
-
+          {/* Sort Button */}
           <div className="hidden lg:flex justify-end items-center gap-3 flex-wrap">
             <SortDropDown state={state} setState={setState} />
 
@@ -111,11 +105,7 @@ export default function ProjectTab({
         </div>
       </div>
 
-      {/* 
-                    ░█▀▀▀ ▀█▀ ░█─── ▀▀█▀▀ ░█▀▀▀ ░█▀▀█ 　 ░█▀▀█ ▀▀█▀▀ ░█▄─░█ 
-                    ░█▀▀▀ ░█─ ░█─── ─░█── ░█▀▀▀ ░█▄▄▀ 　 ░█▀▀▄ ─░█── ░█░█░█ 
-                    ░█─── ▄█▄ ░█▄▄█ ─░█── ░█▄▄▄ ░█─░█ 　 ░█▄▄█ ─░█── ░█──▀█
-            */}
+      {/* Filter Button */}
       {/* overflow-x-auto scrollbar-small scrollbar-thumb pb-2 */}
       <div className="hidden lg:flex gap-2 items-center flex-wrap mt-4">
         <div
@@ -134,8 +124,8 @@ export default function ProjectTab({
 
         <div className="border w-[0.0625rem] h-[1.625rem] border-gray-200"></div>
 
-        <div
-          className={` 
+          <div
+            className={` 
                     h-10
                     hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
                     border rounded-full px-3 py-2 cursor-pointer transition-colors self-center shrink-0
@@ -153,13 +143,7 @@ export default function ProjectTab({
           <p className="text-sm font-normal ">All</p>
         </div>
 
-        {/* 
-                                
-                ░█▀▀█ ─█▀▀█ ░█▀▀▄ ░█▀▀█ ░█▀▀▀ 
-                ░█▀▀▄ ░█▄▄█ ░█─░█ ░█─▄▄ ░█▀▀▀ 
-                ░█▄▄█ ░█─░█ ░█▄▄▀ ░█▄▄█ ░█▄▄▄
-
-                */}
+       {/* Badge Category Filter */}
         {newFilter['category'].map((item, i) => (
           <div
             data-tooltip-id={item.id}
@@ -182,8 +166,10 @@ export default function ProjectTab({
             onClick={() => {
               handleChangeCheckBox(
                 'Category' as keyof CheckBoxStateType,
-                item.id
+                item.id,
+                item.name
               )
+
             }}
           >
             <p className=" text-sm font-normal ">{item.name}</p>
@@ -202,20 +188,12 @@ export default function ProjectTab({
         ))}
       </div>
 
-      {/* 
-                ░█─── ─█▀▀█ ░█──░█ ░█▀▀▀█ ░█─░█ ▀▀█▀▀ 
-                ░█─── ░█▄▄█ ░█▄▄▄█ ░█──░█ ░█─░█ ─░█── 
-                ░█▄▄█ ░█─░█ ──░█── ░█▄▄▄█ ─▀▄▄▀ ─░█──
-            */}
+     
       <div className="mt-[2.5rem] relative animate-slideup">
         {state.view === 'g' ? (
           <div className="animate-slideleft flex gap-6">
-            {/*  
-                            ░█▀▀█ ░█─░█ ░█▀▀▀ ░█▀▀█ ░█─▄▀ ░█▀▀█ ░█▀▀▀█ ▀▄░▄▀ 
-                            ░█─── ░█▀▀█ ░█▀▀▀ ░█─── ░█▀▄─ ░█▀▀▄ ░█──░█ ─░█── 
-                            ░█▄▄█ ░█─░█ ░█▄▄▄ ░█▄▄█ ░█─░█ ░█▄▄█ ░█▄▄▄█ ▄▀░▀▄
-                        */}
 
+            {/* Check Box Section */}
             {state.filter && (
               <CheckBoxFilter
                 checkBox={checkBox}
@@ -261,11 +239,7 @@ export default function ProjectTab({
           </div>
         )}
 
-        {/* 
-                    ░█▀▀█ ─█▀▀█ ░█▀▀█ ▀█▀ ░█▄─░█ ▀▀█▀▀ ▀█▀ ░█▀▀▀█ ░█▄─░█ 
-                    ░█▄▄█ ░█▄▄█ ░█─▄▄ ░█─ ░█░█░█ ─░█── ░█─ ░█──░█ ░█░█░█ 
-                    ░█─── ░█─░█ ░█▄▄█ ▄█▄ ░█──▀█ ─░█── ▄█▄ ░█▄▄▄█ ░█──▀█
-                */}
+        {/* Paginations */}
         {currentItems.length !== 0 && (
           <div className="mt-12 text-sm font-medium text-gray-500">
             <Pagination
