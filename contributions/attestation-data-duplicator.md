@@ -9,10 +9,14 @@ effort: "Large"
 skill-sets: ["Front End Development", "Back End Development", "Full Stack Development", "Smart Contract Development"]
 labels: ["Attestations","Developer Tooling","Accessibility/Transparency","Governance"]
 contributions:
-  contributors: ["@aagbotemi (GitHub) @ Duplikaat Team","@goodness5 (GitHub) @ Duplikaat Team","@okolievans (GitHub) @ Duplikaat Team","@olorunfemibabs (GitHub) @ Duplikaat Team", "@dadsec-dev (GitHub) @ Duplikaat Team"]
-  discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/175"
-  links: [""]
-  execution-status: "in-discussion"
+  - contributors: ["@kristoferlund (Twitter)"]
+    discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/189"
+    links: ["https://catts.run", "https://github.com/c-atts"]
+    execution-status: "in-progress-open"  
+  - contributors: ["@aagbotemi (GitHub) @ Duplikaat Team","@goodness5 (GitHub) @ Duplikaat Team","@okolievans (GitHub) @ Duplikaat Team","@olorunfemibabs (GitHub) @ Duplikaat Team", "@dadsec-dev (GitHub) @ Duplikaat Team"]
+    discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/175"
+    links: [""]
+    execution-status: "in-discussion"
 ---
 
 # Attestation Data Duplicator
