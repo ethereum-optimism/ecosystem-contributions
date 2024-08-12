@@ -8,7 +8,8 @@ export default function SpecificationSection({
   specificationRef: React.MutableRefObject<HTMLElement | null>
 }) {
   // const {title, ...rest} = MarkDownData
-  const newContent = content.contentHtml.replace(/<h1>.*?<\/h1>/gs, '')
+  // const newContent = content.contentHtml.replace(/<h1>.*?<\/h1>/gs, '')
+  const newContent = content.contentHtml.replace(/<h1>[\s\S]*?<\/h1>/g, '');
   return (
     <section
       id="Specification"

@@ -1,25 +1,23 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { useEffect } from 'react';
-import ReactGA from "react-ga4";
+import { useEffect, useRef } from 'react';
+import sendToMixpanel from '../lib/sendToMixpanel';
+import { PAGE_VIEW, PROJECTNAME_PROPERTY } from '@/public/static/mixpanel/event-name';
 
 export function RouteChangeListener() {
-  const pathname = usePathname();
-  if(typeof(process.env.GOOGLE_ANALYTICS_ID) === "string"){
-    ReactGA.initialize(process.env.GOOGLE_ANALYTICS_ID as string);
-  }
+  let pathname = usePathname();
+
+  const hasRun = useRef<{ [key: string]: boolean }>({});
+  // if (!hasRun.current[pathname]) {
 
   useEffect(() => {
-      if(pathname.includes("issue")){
-        let temp = pathname.split("/")
-        ReactGA.send({ hitType: "pageview", page: `/issue/${temp[1]}`, title: `Issue ${temp[1]}` });
-      }
-      else {
-        ReactGA.send({ hitType: "pageview", page: "/", title: "Home" });
-      }
-
-  }, [pathname])
+    sendToMixpanel(PAGE_VIEW);
+    return () => {
+      pathname = ""
+    }
+  }, [pathname]);
+    
 
   return <>
   </>;
