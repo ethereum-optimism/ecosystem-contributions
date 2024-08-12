@@ -4,7 +4,12 @@ import DrawerNav from './DrawerNav'
 import './Navbar.css'
 import Link from 'next/link'
 import sendToMixpanel from '../../lib/sendToMixpanel'
-import { NAV_AIRDROP_CLICK, NAV_BRIDGE_CLICK, NAV_BUILDER_CLICK, NAV_RETROPGF_CLICK } from '@/public/static/mixpanel/event-name'
+import {
+  NAV_AIRDROP_CLICK,
+  NAV_BRIDGE_CLICK,
+  NAV_BUILDER_CLICK,
+  NAV_RETROPGF_CLICK,
+} from '@/public/static/mixpanel/event-name'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -28,7 +33,10 @@ const Navbar = () => {
       items: [
         { name: 'Optimist NFT', link: 'https://app.optimism.io/optimist-nft' },
         { name: 'OP Collective', link: 'https://app.optimism.io/announcement' },
-        { name: 'About RetroPGF', link: 'https://app.optimism.io/retropgf' },
+        {
+          name: 'About Retro Funding',
+          link: 'https://app.optimism.io/retropgf',
+        },
         { name: 'Delegates', link: 'https://vote.optimism.io' },
         { name: 'Forum', link: 'https://gov.optimism.io/' },
       ],
@@ -51,26 +59,24 @@ const Navbar = () => {
     },
   ]
 
-
-
-  async function HandleNavbarEvent(menuName:string) {
+  async function HandleNavbarEvent(menuName: string) {
     try {
       switch (menuName) {
-        case "RetroPGF":
+        case 'RetroPGF':
           await sendToMixpanel(NAV_RETROPGF_CLICK)
-          break;
-        case "Bridge":
+          break
+        case 'Bridge':
           await sendToMixpanel(NAV_BRIDGE_CLICK)
-          break;
-        case "Airdrop":
+          break
+        case 'Airdrop':
           await sendToMixpanel(NAV_AIRDROP_CLICK)
-          break;
-        case "Builder":
+          break
+        case 'Builder':
           await sendToMixpanel(NAV_BUILDER_CLICK)
-          break;
+          break
       }
     } catch (error) {
-      console.error(`Failed to send Mixpanel event for ${menuName}:`, error);
+      console.error(`Failed to send Mixpanel event for ${menuName}:`, error)
     }
   }
 
@@ -88,12 +94,12 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-8 pr-2 items-center text-custom ">
           <ul className="flex gap-8 !font-inter  ">
             {menu.map((item, index) => (
-              <a 
-              href={item.link} 
-              key={index}
-              onClick={() => {
-                HandleNavbarEvent(item.name)
-              }}
+              <a
+                href={item.link}
+                key={index}
+                onClick={() => {
+                  HandleNavbarEvent(item.name)
+                }}
               >
                 <li className="NavMenu !font-medium transition ease-in-out duration-300">
                   <ul>{item.name}</ul>
