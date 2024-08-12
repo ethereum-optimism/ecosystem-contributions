@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 export const GET = async (req: NextRequest) => {
     try {
         //extract the ip
-        const ip = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || req.ip;
+        const ip = (req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || req.ip || "").split(",")[0].trim();
         if(!ip) {
             return NextResponse.json(
                 { error: "Unable to determine IP address: " + ip },
