@@ -1,22 +1,41 @@
 ---
-title: "Attestation Data Duplicator"
-description: "One of the primary challenges currently facing the AttestationStation is the need to bootstrap the system with high-quality attestations. Luckily, blockchains already have an enormous amount of useful data that can be converted into attestations."
-lang: "en-US"
-type: "Project Idea"
-authors: ["@smartcontracts (GitHub) @ OP Labs"]
-category: "dev-tooling"
-effort: "Large"
-skill-sets: ["Front End Development", "Back End Development", "Full Stack Development", "Smart Contract Development"]
-labels: ["Attestations","Developer Tooling","Accessibility/Transparency","Governance"]
+title: 'Attestation Data Duplicator'
+description: 'One of the primary challenges currently facing the AttestationStation is the need to bootstrap the system with high-quality attestations. Luckily, blockchains already have an enormous amount of useful data that can be converted into attestations.'
+lang: 'en-US'
+type: 'Project Idea'
+authors: ['@smartcontracts (GitHub) @ OP Labs']
+category: 'dev-tooling'
+effort: 'Large'
+skill-sets:
+  [
+    'Front End Development',
+    'Back End Development',
+    'Full Stack Development',
+    'Smart Contract Development',
+  ]
+labels:
+  [
+    'Attestations',
+    'Developer Tooling',
+    'Accessibility/Transparency',
+    'Governance',
+  ]
 contributions:
-  - contributors: ["@kristoferlund (Twitter)"]
-    discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/189"
-    links: ["https://catts.run", "https://github.com/c-atts"]
-    execution-status: "in-progress-open"  
-  - contributors: ["@aagbotemi (GitHub) @ Duplikaat Team","@goodness5 (GitHub) @ Duplikaat Team","@okolievans (GitHub) @ Duplikaat Team","@olorunfemibabs (GitHub) @ Duplikaat Team", "@dadsec-dev (GitHub) @ Duplikaat Team"]
-    discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/175"
-    links: [""]
-    execution-status: "in-discussion"
+  - contributors: ['@kristoferlund (Twitter)']
+    discussion-link: 'https://github.com/ethereum-optimism/ecosystem-contributions/discussions/189'
+    links: ['https://catts.run', 'https://github.com/c-atts']
+    execution-status: 'in-progress-open'
+  - contributors:
+      [
+        '@aagbotemi (GitHub) @ Duplikaat Team',
+        '@goodness5 (GitHub) @ Duplikaat Team',
+        '@okolievans (GitHub) @ Duplikaat Team',
+        '@olorunfemibabs (GitHub) @ Duplikaat Team',
+        '@dadsec-dev (GitHub) @ Duplikaat Team',
+      ]
+    discussion-link: 'https://github.com/ethereum-optimism/ecosystem-contributions/discussions/175'
+    links: ['']
+    execution-status: 'in-discussion'
 ---
 
 # Attestation Data Duplicator
