@@ -15,10 +15,10 @@ effort: "Medium"
 skill-sets: ["Documentation"]
 labels: ["Developer Tooling"]
 contributions:
-  contributors: [""]
-  discussion-link: ""
+  contributors: ["@rohithreddy (GitHub) @web108"]
+  discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/245"
   links: [""]
-  execution-status: "not-started"
+  execution-status: "in-progress-open"
 ---
 
 # Collective Governance GPT
