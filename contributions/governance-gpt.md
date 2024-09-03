@@ -15,10 +15,10 @@ effort: "Medium"
 skill-sets: ["Documentation"]
 labels: ["Developer Tooling"]
 contributions:
-  contributors: [""]
-  discussion-link: ""
-  links: [""]
-  execution-status: "not-started"
+  contributors: ["@Billy191 (Catalyzt)", "@Wit03 (Catalyzt)", "@TGRZiminiar (Catalyzt)", "@Suchanat-nut", "@Gunn-Wangwichit"]
+  discussion-link: "https://discord.gg/GvhHNc5E"
+  links: ["https://github.com/catalyzt-tech/OP-GPT-Processor","https://github.com/catalyzt-tech/OP-GPT-Discord-Telegram","https://github.com/catalyzt-tech/OP-GPT"]
+  execution-status: "completed"
 ---
 
 # Collective Governance GPT
