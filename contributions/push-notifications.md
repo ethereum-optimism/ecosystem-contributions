@@ -15,10 +15,10 @@ effort: "Medium"
 skill-sets: ["Front End Development"]
 labels: ["DeSocial"]
 contributions:
-  contributors: [""]
-  discussion-link: ""
+  contributors: ["@chain-l (GitHub), @prajapati-yash (GitHub)"]
+  discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/250"
   links: [""]
-  execution-status: "not-started"
+  execution-status: "in-progress-open"
 ---
 
 # Push-notifications to Notify Tokenholders about Inactive Delegates
