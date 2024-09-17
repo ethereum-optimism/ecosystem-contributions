@@ -9,10 +9,10 @@ effort: "Medium"
 skill-sets: ["Data Analysis", "Front End Development", "Full Stack Development"]
 labels: ["Documentation", "Developer Tooling", "Accessibility/Transparency"]
 contributions: 
-        contributors: [""]
-        discussion-link: ""
+        contributors: ["@pbkompasz (GitHub)"]
+        discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/253"
         links: [""]
-        execution-status: "not-started"
+        execution-status: "in-progress-open"
 ---
 
 # Public OP Mainnet Network Health Dashboard
