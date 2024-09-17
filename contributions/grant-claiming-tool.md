@@ -24,10 +24,10 @@ effort: "Medium"
 skill-sets: ["Full Stack Development"]
 labels: ["Governance"]
 contributions:
-  contributors: [""]
-  discussion-link: ""
+  contributors: ["@rohithreddy (GitHub) @web108"]
+  discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/247"
   links: [""]
-  execution-status: "not-started"
+  execution-status: "in-progress-open"
 ---
 
 # Government Grant Claiming Tool
