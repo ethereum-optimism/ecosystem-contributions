@@ -9,10 +9,10 @@ effort: "Medium"
 skill-sets: ["Front End Development", "Back End Development", "Full Stack Development", "Smart Contract Development"]
 labels: ["Attestations", "Consumer dApps", "DeSocial"]
 contributions:
-  contributors: [""]
-  discussion-link: ""
-  links: [""]
-  execution-status: "not-started"
+  contributors: ["@jamescbury (GitHub) @zeroth-tech", "@ankmister (GitHub) @zeroth-tech", "@patmacs (GitHub) @zeroth-tech"]
+  discussion-link: "https://github.com/ethereum-optimism/ecosystem-contributions/discussions/259"
+  links: ["https://zeroth.technology/pages/blinky_light_thing/blt.html","https://github.com/zeroth-tech/BLT"]
+  execution-status: "in-progress-closed"
 ---
 
 # Deep Fake Protection System
