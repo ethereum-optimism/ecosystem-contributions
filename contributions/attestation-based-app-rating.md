@@ -30,7 +30,7 @@ You can use the AttestationStation to create an application that acts like Yelp 
 - Allow users to see the reviews that others have left on a project.
 - Allow users to search through projects.
 - Allow everyone to see all reviews from a reviewer. 
-- Bonus feature: Some kind of "accuracy rating" based on how many other reviewers rated the project the same as you (bonus bonus points for weighting based on how sure we are an address is real, based on other attestations). 
+- Bonus feature: Some kind of "accuracy rating" based on how many other reviewers rated the project the same as you (bonus points for weighting based on how sure we are an address is real, based on other attestations). 
 
 ## Why this is cool
 
