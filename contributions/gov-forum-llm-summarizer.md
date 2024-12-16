@@ -30,4 +30,4 @@ A web scraper that pulls information from gov.optimism.io and summarizes the act
 
 ## Why this is cool
 
-AI intelligence will make governance participation more easy and accessible!
+AI intelligence will make governance participation more easy and more accessible!
