@@ -13,5 +13,5 @@ The most of the structure of each project can be dynamically change, such as add
 
 Although most of the content in `filter.json` can be adjusted. we recommend to change only the value of primary key. Just try not to change the main key of the filter.
 
-### Chaning The Content of Overview Section
+### Chaining The Content of Overview Section
 The overview section of the site is rendered from `README.md` of the repository.
