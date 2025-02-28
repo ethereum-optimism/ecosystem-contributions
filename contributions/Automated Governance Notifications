@@ -1,0 +1,31 @@
+---
+title: "Automated Governance Notifications"
+description: "Current Challenge: The govNERDs team posts recurring announcements for voting cycles, including:
+- New voting cycle beginnings
+- Voting period openings
+- 48-hour voting reminders
+- Voting period conclusions
+- Veto period communications
+These require manual posting across Discord, Telegram, and other channels, consuming significant time.
+Helpful features could include
+Calendar Integration: Connecting to our governance calendar (Google Calendar/ICS feeds) to trigger announcements.
+Multi-Channel Distribution: Posting simultaneously across Discord, Telegram, and potentially X (Twitter).
+Template Management: Creating a library of announcement templates that can be edited before posting.
+Notification Preferences: Allowing delegates to customize which announcements they receive.
+"
+lang: "en-US"
+type: "Project Idea"
+authors: ["@opjulian"]
+category:
+  id: "dapp-idea"
+  name: "Dapp Idea"
+  description: "An idea for a dapp that is currently missing in the Superchain ecosystem."
+effort: "Small"
+skill-sets: ["Education"]
+labels: ["Governance"]
+contributions:
+  contributors: []
+  discussion-link: ""
+  links: []
+  execution-status: "not-started"
+---
