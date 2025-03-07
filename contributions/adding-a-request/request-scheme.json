@@ -45,7 +45,7 @@
     }
   },
   "authors": {
-    "description": "The author (platform) - organisation.",
+    "description": "The author (platform) - organization.",
     "validation": {
       "char-limit": 250,
       "optional": "true",
@@ -70,7 +70,7 @@
       {
         "id": "dev-experiment",
         "name": "Developer Experimentation",
-        "description": "Technical experimentation for out there ideas. Lets test the bounds of what is possible!"
+        "description": "Technical experimentation for out there ideas. Let's test the bounds of what is possible!"
       },
       {
         "id": "protocol-infra",
@@ -172,7 +172,7 @@
       {
         "id": "in-progress-open",
         "name": "In Progress - Open to Contributors",
-        "description": "This idea is being built, and the contributors are open to help! Jump into the discussion in links to get started!"
+        "description": "This idea is being built, and the contributors are open to help! Jump into the discussion using the links to get started!"
       },
       {
         "id": "in-progress-closed",

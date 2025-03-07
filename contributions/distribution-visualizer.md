@@ -1,6 +1,6 @@
 ---
 title: 'Grant Distribution Visualiser'
-description: 'Visualising the actions of the DAO is a critical requirment for the system to trive once decentralised. A visualisor that makes it easy to see where grants are going and what the teams are doing with the grants (at least on chain) will allow for better tracking as well as easier flagging of potential corruption.'
+description: 'Visualising the actions of the DAO is a critical requirement for the system to thrive once decentralised. A visualisor that makes it easy to see where grants are going and what the teams are doing with the grants (at least on chain) will allow for better tracking as well as easier flagging of potential corruption.'
 lang: 'en-US'
 type: 'Project Idea'
 authors: ['anon']
