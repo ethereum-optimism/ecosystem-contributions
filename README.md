@@ -57,3 +57,44 @@ We want to do everything we can to help you be successful while working on your 
 
 - [Optimism Documentation](https://docs.optimism.io)
 - [Optimism Help Center](https://help.optimism.io)
+
+## 🔧 Troubleshooting Common Issues
+
+### Issue: Cannot clone repository
+
+**Solution**: Ensure you have Git installed and configured:
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+
+### Issue: Build errors after cloning
+
+**Solution**: Install dependencies:
+```bash
+npm install
+# or
+pnpm install
+```
+
+### Issue: Pull request not showing changes
+
+**Solution**: Ensure you've pushed your branch:
+```bash
+git push -u origin your-branch-name
+```
+
+### Issue: Tests failing locally
+
+**Solution**: Run tests with verbose output:
+```bash
+npm test -- --verbose
+```
+
+### Getting Help
+
+If you encounter other issues:
+- Check the [GitHub Issues](https://github.com/ethereum-optimism/ecosystem-contributions/issues)
+- Ask in [Optimism Discord](https://discord.optimism.io)
+- Review the [Developer Documentation](https://docs.optimism.io)
+
