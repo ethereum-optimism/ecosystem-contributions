@@ -57,3 +57,47 @@ We want to do everything we can to help you be successful while working on your 
 
 - [Optimism Documentation](https://docs.optimism.io)
 - [Optimism Help Center](https://help.optimism.io)
+
+## 📋 How to Claim an Idea - Complete Workflow
+
+### Step-by-Step Process
+
+1. **Browse Available Ideas**
+   - Visit the [Builder Ideas page](./contributions)
+   - Filter by category, difficulty, or skills needed
+   - Read idea descriptions carefully
+
+2. **Check Availability**
+   - Ensure the idea hasn't been claimed
+   - Verify you have the required skills
+   - Consider the time commitment
+
+3. **Create an Issue**
+   - Open a new issue on GitHub
+   - Reference the idea you want to claim
+   - Provide a brief plan of your approach
+
+4. **Get Approval**
+   - Wait for maintainer feedback
+   - Address any questions or concerns
+   - Update your plan if needed
+
+5. **Start Building**
+   - Create a feature branch
+   - Implement your solution
+   - Write tests and documentation
+
+6. **Submit Your Work**
+   - Create a pull request
+   - Link to the original issue
+   - Request review from maintainers
+
+### Best Practices
+
+- **Communicate early** - Don't wait until you're done to ask questions
+- **Follow conventions** - Match existing code style and patterns
+- **Write tests** - Ensure your code works and doesn't break existing functionality
+- **Document well** - Help others understand and use your contribution
+
+For detailed guidelines, see [Claiming an Idea](./docs/claim-an-idea.md).
+
