@@ -57,3 +57,8 @@ We want to do everything we can to help you be successful while working on your 
 
 - [Optimism Documentation](https://docs.optimism.io)
 - [Optimism Help Center](https://help.optimism.io)
+
+### Cambio #2 - 20251106010223
+
+Esta sección fue mejorada en la rama `pr-2-improve-documentation`.
+
