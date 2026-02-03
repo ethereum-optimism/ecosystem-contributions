@@ -8,7 +8,7 @@ Directly contact tokenholders with push-notifications (e.g., messaging wallets t
 
 This approach also presents the option to experiment by only notifying a random sample (treatment group) of tokenholders and comparing rates of re-delegation to the non-sampled tokenholders (control group). This is especially useful for learning what types of information and push-notifications help us reach our goals of improved delegation."
 lang: "en-US"
-type: "elizarileyoak"
+type: "Project Idea"
 authors: ["@handle (platform) @ Org"]
 category: 'dapp-idea'
 effort: "Medium"
