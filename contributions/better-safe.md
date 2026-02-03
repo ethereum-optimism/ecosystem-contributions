@@ -19,9 +19,9 @@ contributions:
 
 ## Summary
 
-focus on designing a clean, intuitive interface that guides users through complex processes effortlessly. This includes optimizing the layout, minimizing clutter, and ensuring that essential features are easily accessible.
-streamline processes such as creating wallets, initiating transactions, and managing permissions to make them as straightforward as possible
-provide extensive documentation, tutorials, and tooltips within the platform. These resources will help users understand how to use each feature effectively and securely, reducing the learning curve for beginners.
+Focus on designing a clean, intuitive interface that guides users through complex processes effortlessly. This includes optimizing the layout, minimizing clutter, and ensuring that essential features are easily accessible.
+Streamline processes such as creating wallets, initiating transactions, and managing permissions to make them as straightforward as possible.
+Provide extensive documentation, tutorials, and tooltips within the platform. These resources will help users understand how to use each feature effectively and securely, reducing the learning curve for beginners.
 
 ## Possible Features
 
