@@ -1,6 +1,6 @@
 ---
 title: 'Alternative Visualization of Delegate Health'
-description: "Create a visualization of a delegates health and overall participation in the Collective! Utilize information such as the delegate wallet address, what contracts their wallet has interacted with, their voting history, who has delegated to them, and more! The goal is for anyone to be able to visualize top delegate's health and level of participation within the Collective!"
+description: "Create a visualization of a delegates health and overall participation in the Collective! Utilize information such as the delegate wallet address, what contracts their wallet has interacted with, their voting history, who has delegated to them, and more! The goal is for anyone to be able to visualize top delegates' health and level of participation within the Collective!"
 lang: 'en-US'
 type: 'Project Idea'
 authors: ['opmxwell']
