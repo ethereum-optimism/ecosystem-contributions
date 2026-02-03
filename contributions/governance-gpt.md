@@ -30,7 +30,7 @@ Creating a chat bot based on publicly available information on the governance sy
 ## Possible Features
 
 - can answer commonly asked questions
-- knowledgable about governance information specific to the Collective
+- knowledgeable about governance information specific to the Collective
 - can possibly redirect people to the source of truth for information
 
 ## Why this is cool
