@@ -1,6 +1,6 @@
 ---
 title: "Attestation-Based Dapp Rating System"
-description: You can use the AttestationStation to create an application that acts like Yelp for Dapps. Users should be able to give reviews to the Dapps that they've interacted and should be able to see the reviews that other users have provided.""
+description: "You can use the AttestationStation to create an application that acts like Yelp for Dapps. Users should be able to give reviews to the Dapps that they've interacted with and should be able to see the reviews that other users have provided."
 lang: "en-US"
 type: "Project Idea"
 authors: ["@smartcontracts (GitHub) @ OP Labs"]
