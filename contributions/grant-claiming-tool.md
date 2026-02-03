@@ -1,7 +1,7 @@
 ---
 title: "Government Grant Claiming Tool"
-description: "Build a web interface to enable recipients to claim OP rewards. 
-1Current way to claim idea is suboptimal user experience for both the foundation and grant recipients. The current flow is an email that states 
+description: "Build a web interface to enable recipients to claim OP rewards.
+The current way to claim is a suboptimal user experience for both the foundation and grant recipients. The current flow is an email that states 
 
 For our security procedures OP is delivered through an increase allowance - to claim the OP you can claim it by going to our token contract at:[](https://optimistic.etherscan.io/token/0x4200000000000000000000000000000000000042?a=0x2501c477D0A35545a387Aa4A3EEe4292A9a8B3F0#writeContract)
 
