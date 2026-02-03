@@ -2,7 +2,7 @@
 
 Welcome to the Optimism Collective Builder Ideas!
 
-Knowing where to start building can be overwhelming. Don’t worry though, we have you covered! Here you'll find various ideas that are intended to be a guiding light 💡as you start contributing to the Collective; from developer tooling to protocol experiments, and much more! These ideas have no guaranteed rewards, however by building them you may have a positive impact you can use to apply for Reto Funding. Builder ideas are here to provide guidance on what you could build for the Optimism Collective 💖
+Knowing where to start building can be overwhelming. Don’t worry though, we have you covered! Here you'll find various ideas that are intended to be a guiding light 💡as you start contributing to the Collective; from developer tooling to protocol experiments, and much more! These ideas have no guaranteed rewards, however by building them you may have a positive impact you can use to apply for Retro Funding. Builder ideas are here to provide guidance on what you could build for the Optimism Collective 💖
 
 Choose an idea from the list, build it, create impact, and you might get rewarded via Retro Funding for your impact!
 
