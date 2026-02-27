@@ -57,3 +57,28 @@ We want to do everything we can to help you be successful while working on your 
 
 - [Optimism Documentation](https://docs.optimism.io)
 - [Optimism Help Center](https://help.optimism.io)
+
+## 🚀 Quick Start Guide
+
+### Getting Started
+
+Welcome! This guide will help you get started contributing to the Optimism Collective in just a few steps.
+
+1. **Fork the repository** - Click the "Fork" button on GitHub
+2. **Clone your fork** - `git clone https://github.com/YOUR_USERNAME/ecosystem-contributions.git`
+3. **Create a branch** - `git checkout -b your-feature-name`
+4. **Make your changes** - Edit files and commit your work
+5. **Push and create PR** - `git push origin your-feature-name` and open a pull request
+
+### Prerequisites
+
+- Node.js 18+ installed
+- Git configured with your credentials
+- Basic understanding of TypeScript/JavaScript
+
+### Next Steps
+
+- Read the [Contributing Guidelines](./docs/claim-an-idea.md)
+- Join the [Optimism Discord](https://discord.optimism.io)
+- Check out existing [Builder Ideas](./contributions)
+
