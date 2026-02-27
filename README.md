@@ -57,3 +57,31 @@ We want to do everything we can to help you be successful while working on your 
 
 - [Optimism Documentation](https://docs.optimism.io)
 - [Optimism Help Center](https://help.optimism.io)
+
+## 💰 Retro Funding - Detailed Guide
+
+### Eligibility Criteria
+
+To be eligible for Retro Funding, your project must:
+
+- **Create measurable impact** on the Optimism ecosystem
+- **Be open source** and publicly available
+- **Have active usage** or adoption metrics
+- **Align with Optimism's mission** of scaling Ethereum
+
+### Timeline
+
+Retro Funding rounds typically run:
+- **Application Period**: 2-4 weeks
+- **Evaluation Period**: 4-6 weeks  
+- **Reward Distribution**: 2-4 weeks after evaluation
+
+### How to Apply
+
+1. Ensure your project meets eligibility criteria
+2. Submit your application during the open round
+3. Provide detailed impact metrics and evidence
+4. Wait for evaluation results
+
+For more information, visit the [Retro Funding blog post](https://optimism.mirror.xyz/nz5II2tucf3k8tJ76O6HWwvidLB6TLQXszmMnlnhxWU).
+
