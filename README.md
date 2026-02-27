@@ -57,3 +57,39 @@ We want to do everything we can to help you be successful while working on your 
 
 - [Optimism Documentation](https://docs.optimism.io)
 - [Optimism Help Center](https://help.optimism.io)
+
+## ❓ Frequently Asked Questions (FAQ)
+
+### General Questions
+
+**Q: What is Retro Funding?**
+A: Retro Funding is a mechanism that rewards projects based on their proven impact, rather than promising future results.
+
+**Q: How much can I receive?**
+A: Rewards vary by round and impact. Previous rounds have distributed millions of OP tokens to hundreds of projects.
+
+**Q: Do I need to be a developer?**
+A: No! Many valuable contributions come from designers, writers, community managers, and other roles.
+
+### Application Process
+
+**Q: When is the next round?**
+A: Retro Funding rounds are announced on the [Optimism blog](https://optimism.mirror.xyz) and Discord.
+
+**Q: How long does the process take?**
+A: Typically 8-12 weeks from application to reward distribution.
+
+**Q: Can I apply for multiple projects?**
+A: Yes, but each project is evaluated independently.
+
+### Technical Questions
+
+**Q: What technologies should I use?**
+A: Use whatever tools best solve the problem. Optimism is technology-agnostic.
+
+**Q: Do I need to deploy on Optimism?**
+A: Not necessarily. Many valuable contributions are off-chain tools, documentation, or community work.
+
+**Q: Where can I get help?**
+A: Join the [Optimism Discord](https://discord.optimism.io) or check the [Developer Support GitHub](https://github.com/ethereum-optimism/developers).
+
