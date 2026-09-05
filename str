@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""
+Tutorial scaffolding tool.
+
+Creates a Markdown file with a standard section layout:
+
+  * Introduction
+  * Prerequisites
+  * Setup
+  * Concepts
+  * Hands‑on
+  * Further reading
+  * Summary
+
+Author: AgentClaw Agent (Contributor)
+Signed-off-by: Contributor <contributor@users.noreply.github.com>
+"""
+
+import argparse
+import os
+from datetime import datetime
+
+SECTIONS = [
+    "Introduction",
+    "Prerequisites",
+    "Setup",
+    "Concepts",
+    "Hands‑on",
+    "Further reading",
+    "Summary",
+]
+
+
+def generate_markdown(title: str, filename: str) -> None:
+    """Write a template Markdown file.
+    Args:
+        title: Title of the tutorial.
+        filename: Destination file.
+    """
+    header = f"# {title}\n\n" + f"*Created on {datetime.utcnow():%Y-%m-%d %H:%M UTC}*\n\n"
+    body = "\n\n".join([f"## {section}\n\n- [ ] TODO" for section in SECTIONS]) + "\n"
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(header + body)
+    print(f"Generated {filename}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate a tutorial skeleton in Markdown.")
+    parser.add_argument("title", help="Title of the tutorial")
+    parser.add_argument("-o", "--output", help="Output file (default: title in kebab case).", default=None)
+    args = parser.parse_args()
+
+    filename = args.output or f"{args.title.lower().replace(' ', '-')}.md"
+    if os.path.exists(filename):
+        raise FileExistsError(f"{filename} already exists")
+    generate_markdown(args.title, filename)
+
+
+if __name__ == "__main__":
+    main()
