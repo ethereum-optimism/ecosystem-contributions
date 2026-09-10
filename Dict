@@ -1,0 +1,81 @@
+"""
+Farcaster Social Graph Sybil Detection Engine
+Author: Aditya Waghamare <adityawaghamare7620@gmail.com>
+Intent #1: Progress Towards Decentralization - OP Ecosystem Contributions
+"""
+
+import json
+import logging
+from typing import Dict, List, Optional
+import requests
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("FarcasterSybilDetector")
+
+class FarcasterSybilDetector:
+    def __init__(self, neynar_api_key: Optional[str] = None):
+        self.neynar_api_key = neynar_api_key or "NEYNAR_API_DOCS"
+        self.base_url = "https://api.neynar.com/v2/farcaster"
+
+    def fetch_user_graph_data(self, fid: int) -> Dict:
+        """Fetch user profile, followers, following, and casts graph metrics."""
+        logger.info(f"Fetching social graph metrics for FID: {fid}")
+        # Placeholder for robust API integration with Neynar v2
+        return {
+            "fid": fid,
+            "follower_count": 125,
+            "following_count": 300,
+            "power_badge": False,
+            "verified_addresses": 1,
+            "account_age_days": 45,
+            "engagement_score": 0.42
+        }
+
+    def compute_sybil_probability(self, profile: Dict) -> float:
+        """
+        Calculates the probability (0.0 to 1.0) that a Farcaster account is a Sybil
+        based on heuristics:
+        - Account age (< 30 days increases risk)
+        - Following/Follower ratio anomaly
+        - Lack of verified Ethereum addresses / EAS attestations
+        - Low organic engagement score
+        """
+        score = 0.0
+
+        if profile["account_age_days"] < 30:
+            score += 0.35
+        elif profile["account_age_days"] < 90:
+            score += 0.15
+
+        ratio = profile["following_count"] / max(profile["follower_count"], 1)
+        if ratio > 5.0 or ratio < 0.1:
+            score += 0.25
+
+        if profile["verified_addresses"] == 0:
+            score += 0.20
+
+        if not profile["power_badge"]:
+            score += 0.10
+
+        if profile["engagement_score"] < 0.1:
+            score += 0.10
+
+        return min(round(score, 4), 1.0)
+
+    def evaluate_batch(self, fids: List[int]) -> List[Dict]:
+        results = []
+        for fid in fids:
+            profile = self.fetch_user_graph_data(fid)
+            prob = self.compute_sybil_probability(profile)
+            results.append({
+                "fid": fid,
+                "sybil_probability": prob,
+                "is_high_risk": prob >= 0.65
+            })
+        return results
+
+if __name__ == "__main__":
+    detector = FarcasterSybilDetector()
+    sample_fids = [12345, 67890]
+    evaluation = detector.evaluate_batch(sample_fids)
+    print(json.dumps(evaluation, indent=2))
